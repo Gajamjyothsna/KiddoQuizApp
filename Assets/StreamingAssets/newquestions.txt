@@ -1,0 +1,444 @@
+{
+  "questions": [
+    {
+      "index": 1,
+      "category": "The Land",
+      "question": "Which is the driest place on the North American continent?",
+      "options": [
+        "Death Valley",
+        "Sonoran Desert",
+        "Mojave Desert",
+        "Great Basin Desert"
+      ],
+      "answer": "Death Valley",
+      "hint": "The place is also the lowest and hottest place in North America."
+    },
+    {
+      "index": 2,
+      "category": "The Land",
+      "question": "What is the name of the longest mountain range of North America?",
+      "options": [
+        "Andes Mountains",
+        "Appalachian Mountains",
+        "Rocky Mountains",
+        "Canadian Shield"
+      ],
+      "answer": "Rocky Mountains",
+      "hint": "The range stretches some 3000 miles across Canada, United States, and Mexico."
+    },
+    {
+      "index": 3,
+      "category": "The Land",
+      "question": "Which ocean borders North America in the east?",
+      "options": [
+        "Atlantic Ocean",
+        "Gulf of Mexico",
+        "Pacific Ocean",
+        "Antarctic Ocean"
+      ],
+      "answer": "Atlantic Ocean",
+      "hint": "The ocean separates North America and Europe."
+    },
+    {
+      "index": 4,
+      "category": "The Land",
+      "question": "What is the highest point in North America?",
+      "options": [
+        "Mount Hayes",
+        "Mount Logan",
+        "Mount Helen",
+        "Mount McKinley"
+      ],
+      "answer": "Mount McKinley",
+      "hint": "The peak is located in Alaska, United States."
+    },
+    {
+      "index": 5,
+      "category": "The Land",
+      "question": "Which is the largest lake in North America?",
+      "options": [
+        "Lake Michigan",
+        "Lake Ontario",
+        "Lake Superior",
+        "Great Salt Lake"
+      ],
+      "answer": "Lake Superior",
+      "hint": "The lake is the largest freshwater lake in the world by surface area and the third largest by volume."
+    },
+    {
+      "index": 6,
+      "category": "The Land",
+      "question": "Which is the national animal of the USA?",
+      "options": [
+        "Moose",
+        "American Bison",
+        "Reindeer",
+        "Polar Bear"
+      ],
+      "answer": "American Bison",
+      "hint": "The animal is commonly called 'buffalo,' but they’re actually not buffalo!"
+    },
+    {
+      "index": 7,
+      "category": "The Land",
+      "question": "What is the collective name for the string of islands at the southern tip of Florida?",
+      "options": [
+        "Caribbean Islands",
+        "Aleutian Islands",
+        "Florida Keys",
+        "Greater Antilles"
+      ],
+      "answer": "Florida Keys",
+      "hint": "The islands are situated off the southern tip of Florida and surrounded by the Gulf of Mexico to the north and the Atlantic Ocean to the south."
+    },
+    {
+      "index": 8,
+      "category": "The Land",
+      "question": "In which U.S. state is the Everglades National Park?",
+      "options": [
+        "Hawaii",
+        "Florida",
+        "Oregon",
+        "California"
+      ],
+      "answer": "Florida",
+      "hint": "Everglades is one of the world’s largest tropical wetlands and has the Gulf of Mexico on its southern end."
+    },
+    {
+      "index": 9,
+      "category": "The Land",
+      "question": "True or false? Grizzly bears are fast runners.",
+      "options": [
+        "TRUE",
+        "FALSE"
+      ],
+      "answer": "TRUE",
+      "hint": ""
+    },
+    {
+      "index": 10,
+      "category": "The Land",
+      "question": "Which animal would you expect to see in the grassland biome?",
+      "options": [
+        "American Bison",
+        "Elk",
+        "Moose",
+        "Lynx"
+      ],
+      "answer": "American Bison",
+      "hint": "These are formidable beasts and the heaviest land animals in North America."
+    },
+    {
+      "index": 11,
+      "category": "The Land",
+      "question": "What is the national bird of the United States?",
+      "options": [
+        "Peregrine Falcon",
+        "Bald Eagle",
+        "Wild Turkey",
+        "Great Horned Owl"
+      ],
+      "answer": "Bald Eagle",
+      "hint": ""
+    },
+    {
+      "index": 12,
+      "category": "The Land",
+      "question": "Which of these bear species is unique to North America?",
+      "options": [
+        "Polar Bears",
+        "Sun Bears",
+        "Sloth Bears",
+        "Grizzly Bears"
+      ],
+      "answer": "Grizzly Bears",
+      "hint": ""
+    },
+    {
+      "index": 13,
+      "category": "The Land",
+      "question": "The American pika is a small mammal that lives where?",
+      "options": [
+        "Lake Superior",
+        "Rocky Mountains",
+        "Appalachian Mountains",
+        "Great Salt Lake"
+      ],
+      "answer": "Rocky Mountains",
+      "hint": ""
+    },
+    {
+      "index": 14,
+      "category": "The Land",
+      "question": "Which river flows through the Grand Canyon?",
+      "options": [
+        "Colorado River",
+        "Columbia River",
+        "Mississippi River",
+        "Rio Grande"
+      ],
+      "answer": "Colorado River",
+      "hint": ""
+    },
+    {
+      "index": 15,
+      "category": "The Land",
+      "question": "This famous waterfall located on the borders of USA and Canada is popularly known as?",
+      "options": [
+        "Victoria Falls",
+        "Niagara Falls",
+        "Yosemite Falls",
+        "Multnomah Falls"
+      ],
+      "answer": "Niagara Falls",
+      "hint": ""
+    },
+    {
+      "index": 16,
+      "category": "The Land",
+      "question": "The geographical feature is a broad region of Precambrian rock that encircles Hudson Bay. What is this feature known as?",
+      "options": [
+        "Rocky Mountains",
+        "Great Plains",
+        "Canadian Shield",
+        "Appalachian Mountains"
+      ],
+      "answer": "Canadian Shield",
+      "hint": ""
+    },
+    {
+      "index": 17,
+      "category": "The People",
+      "question": "On which day do U.S. Americans celebrate Independence Day?",
+      "options": [
+        "4th of July",
+        "15th of August",
+        "20th of February",
+        "25th of December"
+      ],
+      "answer": "4th of July",
+      "hint": ""
+    },
+    {
+      "index": 18,
+      "category": "The People",
+      "question": "How many stars appear on the flag of the United States?",
+      "options": [
+        "52",
+        "48",
+        "50",
+        "46"
+      ],
+      "answer": "50",
+      "hint": ""
+    },
+    {
+      "index": 19,
+      "category": "The People",
+      "question": "The ruins of the ancient Mayan city of Palenque are found in which country?",
+      "options": [
+        "Mexico",
+        "Belize",
+        "Guatemala",
+        "Panama"
+      ],
+      "answer": "Mexico",
+      "hint": ""
+    },
+    {
+      "index": 20,
+      "category": "The People",
+      "question": "The best-preserved mummies in North America can be viewed in which city?",
+      "options": [
+        "Ottawa, Canada",
+        "Nuuk, Greenland",
+        "New York City, United States",
+        "Vancouver, Canada"
+      ],
+      "answer": "Nuuk, Greenland",
+      "hint": ""
+    },
+    {
+      "index": 21,
+      "category": "The People",
+      "question": "Although a part of North America, Greenland is a territory of which country?",
+      "options": [
+        "Iceland",
+        "United States of America",
+        "Denmark",
+        "United Kingdom"
+      ],
+      "answer": "Denmark",
+      "hint": ""
+    },
+    {
+      "index": 22,
+      "category": "The People",
+      "question": "In which city would you find the Statue of Liberty?",
+      "options": [
+        "Philadelphia",
+        "New York City",
+        "Washington D.C.",
+        "San Francisco"
+      ],
+      "answer": "New York City",
+      "hint": ""
+    },
+    {
+      "index": 23,
+      "category": "The People",
+      "question": "Which is the largest city in North America?",
+      "options": [
+        "New York City",
+        "Toronto",
+        "Mexico City",
+        "San Francisco"
+      ],
+      "answer": "Mexico City",
+      "hint": ""
+    },
+    {
+      "index": 24,
+      "category": "The People",
+      "question": "How many countries are there in Central America?",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "answer": "7",
+      "hint": ""
+    },
+    {
+      "index": 25,
+      "category": "The People",
+      "question": "Which language is the most commonly spoken in Central America?",
+      "options": [
+        "Creole",
+        "Portuguese",
+        "Spanish",
+        "Miskito"
+      ],
+      "answer": "Spanish",
+      "hint": ""
+    },
+    {
+      "index": 26,
+      "category": "The People",
+      "question": "The waterway in Panama that connects the Atlantic Ocean with the Pacific Ocean is known as:",
+      "options": [
+        "Champlain Canal",
+        "Florida Canal",
+        "Panama Canal",
+        "Orleans Canal"
+      ],
+      "answer": "Panama Canal",
+      "hint": ""
+    },
+    {
+      "index": 27,
+      "category": "The People",
+      "question": "Which Native American people lived in the Arctic region?",
+      "options": [
+        "Aztec",
+        "Inca",
+        "Maya",
+        "Inuit"
+      ],
+      "answer": "Inuit",
+      "hint": ""
+    },
+    {
+      "index": 28,
+      "category": "The People",
+      "question": "The ancient culture of the Maya developed in what is now the present-day region of which three countries?",
+      "options": [
+        "USA, Canada, Greenland",
+        "Mexico, Belize, Guatemala",
+        "Mexico, Panama, Nicaragua",
+        "USA, Mexico, Guatemala"
+      ],
+      "answer": "Mexico, Belize, Guatemala",
+      "hint": ""
+    },
+    {
+      "index": 29,
+      "category": "The People",
+      "question": "Which Native American civilization built the city of Machu Picchu?",
+      "options": [
+        "Aztec",
+        "Inca",
+        "Maya",
+        "Olmec"
+      ],
+      "answer": "Inca",
+      "hint": ""
+    },
+    {
+      "index": 30,
+      "category": "The People",
+      "question": "Which Native American civilization built the ancient city of Tenochtitlán?",
+      "options": [
+        "Inca",
+        "Olmec",
+        "Aztec",
+        "Maya"
+      ],
+      "answer": "Aztec",
+      "hint": ""
+    },
+    {
+      "index": 31,
+      "category": "The People",
+      "question": "This Native American civilization was known for creating a calendar and pyramids. Who were they?",
+      "options": [
+        "Inca",
+        "Olmec",
+        "Aztec",
+        "Maya"
+      ],
+      "answer": "Maya",
+      "hint": ""
+    },
+    {
+      "index": 32,
+      "category": "The People",
+      "question": "Which U.S. state was originally called the Sandwich Islands?",
+      "options": [
+        "Hawaii",
+        "Alaska",
+        "California",
+        "Washington"
+      ],
+      "answer": "Hawaii",
+      "hint": ""
+    },
+    {
+      "index": 33,
+      "category": "The People",
+      "question": "Which country is known as the Land of the Rising Sun?",
+      "options": [
+        "China",
+        "India",
+        "Japan",
+        "South Korea"
+      ],
+      "answer": "Japan",
+      "hint": ""
+    },
+    {
+      "index": 34,
+      "category": "The People",
+      "question": "Which country is famous for inventing pasta and pizza?",
+      "options": [
+        "France",
+        "Italy",
+        "Greece",
+        "Mexico"
+      ],
+      "answer": "Italy",
+      "hint": ""
+    }
+  ]
+}
