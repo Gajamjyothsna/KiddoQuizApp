@@ -785,6 +785,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _uiController: {fileID: 495972807}
+  quizDataScriptableObject: {fileID: 11400000, guid: 9620311b0d7d4e449a99db8ba352afa1, type: 2}
 --- !u!1 &643027138
 GameObject:
   m_ObjectHideFlags: 0

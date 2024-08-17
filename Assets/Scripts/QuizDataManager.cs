@@ -1,8 +1,7 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
-using UnityEngine.Networking;
+using UnityEditor;
 
 public class QuizDataManager : MonoBehaviour
 {
@@ -24,34 +23,41 @@ public class QuizDataManager : MonoBehaviour
     }
 
     [SerializeField] private UIController _uiController;
-    void Start()
-    {
-        // Path to your JSON file (e.g., from StreamingAssets folder)
-        string filePath = Path.Combine(Application.streamingAssetsPath, "questions.json");
+    [SerializeField] private QuizDataScriptableObject quizDataScriptableObject;
 
-        Debug.Log("1");
+    private void OnValidate()
+    {
+        if (quizDataScriptableObject != null)
+        {
+            DeserializeJsonToScriptableObject();
+        }
+    }
+
+    private void DeserializeJsonToScriptableObject()
+    {
+        string filePath = Path.Combine(Application.streamingAssetsPath, "questions.json");
 
         if (File.Exists(filePath))
         {
-            Debug.Log("2");
             try
             {
-                Debug.Log("3");
-
-                // Read the JSON file into a string
                 string jsonData = File.ReadAllText(filePath);
 
-                Debug.Log("4");
-
-                Debug.Log("JsonData" +jsonData);
-                // Deserialize the JSON string to the QuizData object
                 QuizData quizData = JsonUtility.FromJson<QuizData>(jsonData);
 
-                Debug.Log("QUestion Length" + quizData.questions.Count);
-
-                if(_uiController != null)
+                if (quizDataScriptableObject != null)
                 {
-                    _uiController.SetQuizData(quizData);
+                    quizDataScriptableObject.questions = quizData.questions;
+
+                    // Save the ScriptableObject to disk so that the data is persisted
+                    EditorUtility.SetDirty(quizDataScriptableObject);
+                    AssetDatabase.SaveAssets();
+
+                    Debug.Log("Data has been successfully deserialized and stored in the ScriptableObject.");
+                }
+                else
+                {
+                    Debug.LogError("QuizDataScriptableObject reference is missing.");
                 }
             }
             catch (System.Exception e)
@@ -64,5 +70,17 @@ public class QuizDataManager : MonoBehaviour
             Debug.LogError($"Could not find the JSON file at path: {filePath}");
         }
     }
-}
 
+    void Start()
+    {
+        if (quizDataScriptableObject != null && _uiController !=null)
+        {
+            // Pass the deserialized data from the ScriptableObject to the UIController
+            _uiController.SetQuizData(new QuizData { questions = quizDataScriptableObject.questions });
+        }
+        else
+        {
+            Debug.LogError("QuizDataScriptableObject is not assigned.");
+        }
+    }
+}
