@@ -23,6 +23,7 @@ MonoBehaviour:
     - Great Basin Desert
     answer: Death Valley
     hint: The place is also the lowest and hottest place in North America.
+    isAnswered: 0
   - index: 2
     category: The Land
     question: What is the name of the longest mountain range of North America?
@@ -33,6 +34,7 @@ MonoBehaviour:
     - Canadian Shield
     answer: Rocky Mountains
     hint: The range stretches some 3000 miles across Canada, United States, and Mexico.
+    isAnswered: 0
   - index: 3
     category: The Land
     question: Which ocean borders North America in the east?
@@ -43,6 +45,7 @@ MonoBehaviour:
     - Antarctic Ocean
     answer: Atlantic Ocean
     hint: The ocean separates North America and Europe.
+    isAnswered: 0
   - index: 4
     category: The Land
     question: What is the highest point in North America?
@@ -53,6 +56,7 @@ MonoBehaviour:
     - Mount McKinley
     answer: Mount McKinley
     hint: The peak is located in Alaska, United States.
+    isAnswered: 0
   - index: 5
     category: The Land
     question: Which is the largest lake in North America?
@@ -64,6 +68,7 @@ MonoBehaviour:
     answer: Lake Superior
     hint: The lake is the largest freshwater lake in the world by surface area and
       the third largest by volume.
+    isAnswered: 0
   - index: 6
     category: The Land
     question: Which is the national animal of the USA?
@@ -75,6 +80,7 @@ MonoBehaviour:
     answer: American Bison
     hint: "The animal is commonly called 'buffalo,' but they\u2019re actually not
       buffalo!"
+    isAnswered: 0
   - index: 7
     category: The Land
     question: What is the collective name for the string of islands at the southern
@@ -87,6 +93,7 @@ MonoBehaviour:
     answer: Florida Keys
     hint: The islands are situated off the southern tip of Florida and surrounded
       by the Gulf of Mexico to the north and the Atlantic Ocean to the south.
+    isAnswered: 0
   - index: 8
     category: The Land
     question: In which U.S. state is the Everglades National Park?
@@ -98,6 +105,7 @@ MonoBehaviour:
     answer: Florida
     hint: "Everglades is one of the world\u2019s largest tropical wetlands and has
       the Gulf of Mexico on its southern end."
+    isAnswered: 0
   - index: 9
     category: The Land
     question: True or false? Grizzly bears are fast runners.
@@ -106,6 +114,7 @@ MonoBehaviour:
     - FALSE
     answer: TRUE
     hint: 
+    isAnswered: 0
   - index: 10
     category: The Land
     question: Which animal would you expect to see in the grassland biome?
@@ -116,6 +125,7 @@ MonoBehaviour:
     - Lynx
     answer: American Bison
     hint: These are formidable beasts and the heaviest land animals in North America.
+    isAnswered: 0
   - index: 11
     category: The Land
     question: What is the national bird of the United States?
@@ -126,6 +136,7 @@ MonoBehaviour:
     - Great Horned Owl
     answer: Bald Eagle
     hint: 
+    isAnswered: 0
   - index: 12
     category: The Land
     question: Which of these bear species is unique to North America?
@@ -136,6 +147,7 @@ MonoBehaviour:
     - Grizzly Bears
     answer: Grizzly Bears
     hint: 
+    isAnswered: 0
   - index: 13
     category: The Land
     question: The American pika is a small mammal that lives where?
@@ -146,6 +158,7 @@ MonoBehaviour:
     - Great Salt Lake
     answer: Rocky Mountains
     hint: 
+    isAnswered: 0
   - index: 14
     category: The Land
     question: Which river flows through the Grand Canyon?
@@ -156,6 +169,7 @@ MonoBehaviour:
     - Rio Grande
     answer: Colorado River
     hint: 
+    isAnswered: 0
   - index: 15
     category: The Land
     question: This famous waterfall located on the borders of USA and Canada is popularly
@@ -167,6 +181,7 @@ MonoBehaviour:
     - Multnomah Falls
     answer: Niagara Falls
     hint: 
+    isAnswered: 0
   - index: 16
     category: The Land
     question: The geographical feature is a broad region of Precambrian rock that
@@ -178,6 +193,7 @@ MonoBehaviour:
     - Appalachian Mountains
     answer: Canadian Shield
     hint: 
+    isAnswered: 0
   - index: 17
     category: The People
     question: On which day do U.S. Americans celebrate Independence Day?
@@ -188,6 +204,7 @@ MonoBehaviour:
     - 25th of December
     answer: 4th of July
     hint: 
+    isAnswered: 0
   - index: 18
     category: The People
     question: How many stars appear on the flag of the United States?
@@ -198,6 +215,7 @@ MonoBehaviour:
     - 46
     answer: 50
     hint: 
+    isAnswered: 0
   - index: 19
     category: The People
     question: The ruins of the ancient Mayan city of Palenque are found in which
@@ -209,6 +227,7 @@ MonoBehaviour:
     - Panama
     answer: Mexico
     hint: 
+    isAnswered: 0
   - index: 20
     category: The People
     question: The best-preserved mummies in North America can be viewed in which
@@ -220,6 +239,7 @@ MonoBehaviour:
     - Vancouver, Canada
     answer: Nuuk, Greenland
     hint: 
+    isAnswered: 0
   - index: 21
     category: The People
     question: Although a part of North America, Greenland is a territory of which
@@ -231,6 +251,7 @@ MonoBehaviour:
     - United Kingdom
     answer: Denmark
     hint: 
+    isAnswered: 0
   - index: 22
     category: The People
     question: In which city would you find the Statue of Liberty?
@@ -241,6 +262,7 @@ MonoBehaviour:
     - San Francisco
     answer: New York City
     hint: 
+    isAnswered: 0
   - index: 23
     category: The People
     question: Which is the largest city in North America?
@@ -251,6 +273,7 @@ MonoBehaviour:
     - San Francisco
     answer: Mexico City
     hint: 
+    isAnswered: 0
   - index: 24
     category: The People
     question: How many countries are there in Central America?
@@ -261,6 +284,7 @@ MonoBehaviour:
     - 9
     answer: 7
     hint: 
+    isAnswered: 0
   - index: 25
     category: The People
     question: Which language is the most commonly spoken in Central America?
@@ -271,6 +295,7 @@ MonoBehaviour:
     - Miskito
     answer: Spanish
     hint: 
+    isAnswered: 0
   - index: 26
     category: The People
     question: 'The waterway in Panama that connects the Atlantic Ocean with the Pacific
@@ -282,6 +307,7 @@ MonoBehaviour:
     - Orleans Canal
     answer: Panama Canal
     hint: 
+    isAnswered: 0
   - index: 27
     category: The People
     question: Which Mexican holiday is celebrated with parades and parties every
@@ -293,6 +319,7 @@ MonoBehaviour:
     - "D\xEDa de la Independencia"
     answer: "D\xEDa de los Muertos"
     hint: 
+    isAnswered: 0
   - index: 28
     category: The People
     question: The language of the Inuit people of Canada is called what?
@@ -303,6 +330,7 @@ MonoBehaviour:
     - Inuktitut
     answer: Inuktitut
     hint: 
+    isAnswered: 0
   - index: 29
     category: The People
     question: The native peoples of the Great Plains lived in structures called what?
@@ -313,6 +341,7 @@ MonoBehaviour:
     - Hogans
     answer: Tipis
     hint: 
+    isAnswered: 0
   - index: 30
     category: The People
     question: 'This event is the largest in the United States and is a celebration
@@ -324,3 +353,4 @@ MonoBehaviour:
     - Christmas
     answer: Mardi Gras
     hint: 
+    isAnswered: 0

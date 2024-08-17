@@ -14,6 +14,7 @@ public class QuizDataManager : MonoBehaviour
         public List<string> options;
         public string answer;
         public string hint;
+        public bool isAnswered = false;  // New field to track if the question is answered
     }
 
     [System.Serializable]
