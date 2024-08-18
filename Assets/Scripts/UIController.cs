@@ -28,11 +28,20 @@ public class UIController : MonoBehaviour
 
     [Header("Score UI Component")]
     [SerializeField] private TextMeshProUGUI _scoreTMP;
+    [SerializeField] private TextMeshProUGUI _pointsTMP;
+
+    [Header("Question Number UI Component")]
+    [SerializeField] private TextMeshProUGUI _questionNumberTMP;
+
+    [Header("Star Images")]
+    [SerializeField] private Image[] starImages;
 
     private List<QuizDataManager.Question> _currentCategoryQuestions;
     private int _currentQuestionIndex = 0;
     private int _correctAnswersCount = 0; // Counter for correct answers
     private int userScore = 0;
+    private int currentAttempt = 0; // Track the number of attempts for the current question
+    private int userPoints = 0;
 
     public void SetQuizData(QuizDataManager.QuizData data)
     {
@@ -81,6 +90,10 @@ public class UIController : MonoBehaviour
             var question = _currentCategoryQuestions[_currentQuestionIndex];
             _questionTMP.text = question.question;
 
+            _questionNumberTMP.text = "Question " + (_currentQuestionIndex + 1);
+            // Reset attempts for the new question
+            currentAttempt = 0;
+
             for (int i = 0; i < _options.Length; i++)
             {
                 if (i < question.options.Count)
@@ -108,9 +121,17 @@ public class UIController : MonoBehaviour
     {
         var currentQuestion = _currentCategoryQuestions[_currentQuestionIndex];
 
+        currentAttempt++; // Increment the attempt count
+
         if (currentQuestion.options[selectedOptionIndex] == currentQuestion.answer)
         {
             Debug.Log("Correct answer!");
+
+            // Calculate points based on the number of attempts
+            int pointsAwarded = Mathf.Max(4 - (currentAttempt - 1), 1); // Ensure at least 1 point is awarded
+
+            userPoints += pointsAwarded;
+            _pointsTMP.text = userPoints.ToString();
 
             userScore += 1;
             _scoreTMP.text = userScore.ToString();
@@ -145,6 +166,7 @@ public class UIController : MonoBehaviour
         {
             Debug.Log("Incorrect answer. Try again or show a hint.");
             _wrongAnswerPopUp.SetActive(true);
+            starImages[currentAttempt].GetComponent<Image>().color = Color.white;
             if(string.IsNullOrEmpty(currentQuestion.hint)) 
             {
                 _wrongAnswerContentTMP.text = "You have attempted the wrong answer. Please read the question twice.";
