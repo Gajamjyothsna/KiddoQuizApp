@@ -35,6 +35,11 @@ public class UIController : MonoBehaviour
 
     [Header("Star Images")]
     [SerializeField] private Image[] starImages;
+    [SerializeField] private Color starOriginalColor;
+
+    [Header("Option ColorCodes")]
+    [SerializeField] private Color CorrectAnswerColor;
+    [SerializeField] private Color WrongAnswerColor;
 
     private List<QuizDataManager.Question> _currentCategoryQuestions;
     private int _currentQuestionIndex = 0;
@@ -91,8 +96,11 @@ public class UIController : MonoBehaviour
             _questionTMP.text = question.question;
 
             _questionNumberTMP.text = "Question " + (_currentQuestionIndex + 1);
+
             // Reset attempts for the new question
             currentAttempt = 0;
+            ResetStars();
+            ResetOptionsColors();
 
             for (int i = 0; i < _options.Length; i++)
             {
@@ -125,6 +133,9 @@ public class UIController : MonoBehaviour
 
         if (currentQuestion.options[selectedOptionIndex] == currentQuestion.answer)
         {
+           
+             _options[selectedOptionIndex].GetComponent<Image>().color = CorrectAnswerColor;
+             _options[selectedOptionIndex].GetComponent<Image>().color = new Color(CorrectAnswerColor.r, CorrectAnswerColor.g, CorrectAnswerColor.b, 1);
             Debug.Log("Correct answer!");
 
             // Calculate points based on the number of attempts
@@ -165,8 +176,14 @@ public class UIController : MonoBehaviour
         else
         {
             Debug.Log("Incorrect answer. Try again or show a hint.");
+
+            if (currentAttempt <= starImages.Length)
+            {
+                starImages[currentAttempt - 1].color = Color.white; // Change the color of the star to white
+            }
+            _options[selectedOptionIndex].GetComponent<Image>().color = WrongAnswerColor;
+            _options[selectedOptionIndex].GetComponent<Image>().color = new Color(WrongAnswerColor.r, WrongAnswerColor.g, WrongAnswerColor.b, 1);
             _wrongAnswerPopUp.SetActive(true);
-            starImages[currentAttempt].GetComponent<Image>().color = Color.white;
             if(string.IsNullOrEmpty(currentQuestion.hint)) 
             {
                 _wrongAnswerContentTMP.text = "You have attempted the wrong answer. Please read the question twice.";
@@ -199,5 +216,21 @@ public class UIController : MonoBehaviour
     {
         _wrongAnswerPopUp.SetActive(false) ;
         _hintTMP.text = "";
+    }
+
+    private void ResetStars()
+    {
+        foreach (var star in starImages)
+        {
+            star.color = Color.yellow; // Reset all stars to yellow
+        }
+    }
+
+    private void ResetOptionsColors()
+    {
+        foreach(var option in _options)
+        {
+            option.GetComponent<Image>().color = new Color(255, 255, 255, 0);
+        }
     }
 }
