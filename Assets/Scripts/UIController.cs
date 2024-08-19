@@ -133,9 +133,9 @@ public class UIController : MonoBehaviour
 
         if (currentQuestion.options[selectedOptionIndex] == currentQuestion.answer)
         {
-           
              _options[selectedOptionIndex].GetComponent<Image>().color = CorrectAnswerColor;
-             _options[selectedOptionIndex].GetComponent<Image>().color = new Color(CorrectAnswerColor.r, CorrectAnswerColor.g, CorrectAnswerColor.b, 1);
+            _options[selectedOptionIndex].GetComponent<Image>().color = new Color(CorrectAnswerColor.r, CorrectAnswerColor.g, CorrectAnswerColor.b, 1);
+
             Debug.Log("Correct answer!");
 
             // Calculate points based on the number of attempts
