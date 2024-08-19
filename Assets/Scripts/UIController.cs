@@ -3,6 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
+using System.Collections;
 
 public class UIController : MonoBehaviour
 {
@@ -40,6 +41,9 @@ public class UIController : MonoBehaviour
     [Header("Option ColorCodes")]
     [SerializeField] private Color CorrectAnswerColor;
     [SerializeField] private Color WrongAnswerColor;
+
+    [SerializeField] private Animator _correctAnswerAnimator;
+    [SerializeField] private GameObject answerObject;
 
     private List<QuizDataManager.Question> _currentCategoryQuestions;
     private int _currentQuestionIndex = 0;
@@ -101,6 +105,7 @@ public class UIController : MonoBehaviour
             currentAttempt = 0;
             ResetStars();
             ResetOptionsColors();
+            ResetAnswerOption();
 
             for (int i = 0; i < _options.Length; i++)
             {
@@ -133,10 +138,11 @@ public class UIController : MonoBehaviour
 
         if (currentQuestion.options[selectedOptionIndex] == currentQuestion.answer)
         {
-             _options[selectedOptionIndex].GetComponent<Image>().color = CorrectAnswerColor;
-            _options[selectedOptionIndex].GetComponent<Image>().color = new Color(CorrectAnswerColor.r, CorrectAnswerColor.g, CorrectAnswerColor.b, 1);
 
             Debug.Log("Correct answer!");
+
+            _options[selectedOptionIndex].GetComponent<Image>().color = CorrectAnswerColor;
+            _options[selectedOptionIndex].GetComponent<Image>().color = new Color(CorrectAnswerColor.r, CorrectAnswerColor.g, CorrectAnswerColor.b, 1);
 
             // Calculate points based on the number of attempts
             int pointsAwarded = Mathf.Max(4 - (currentAttempt - 1), 1); // Ensure at least 1 point is awarded
@@ -165,7 +171,15 @@ public class UIController : MonoBehaviour
 
             if (_currentQuestionIndex < _currentCategoryQuestions.Count)
             {
-                DisplayCurrentQuestion();
+                StartCoroutine(DelayTheNextQuestion());
+
+                IEnumerator DelayTheNextQuestion()
+                {
+                    _correctAnswerAnimator.SetTrigger("Correct");
+                    answerObject.SetActive(true);
+                    yield return new WaitForSeconds(2f);
+                    DisplayCurrentQuestion();
+                }
             }
             else
             {
@@ -232,5 +246,10 @@ public class UIController : MonoBehaviour
         {
             option.GetComponent<Image>().color = new Color(255, 255, 255, 0);
         }
+    }
+
+    private void ResetAnswerOption()
+    {
+        answerObject.SetActive(false);
     }
 }
