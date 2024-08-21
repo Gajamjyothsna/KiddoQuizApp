@@ -1,0 +1,719 @@
+{
+    "questions": [
+      {
+        "index " : 1,
+        "category": "The Land",
+        "question": "What is the longest river in Europe?",
+        "options": [
+          "Danube River",
+          "Volga River",
+          "Seine River",
+          "Thames River"
+        ],
+        "answer": "Volga River"
+      },
+      {
+        "index " : 2,
+        "category": "The Land",
+        "question": "Which mountain range separates Europe and Asia?",
+        "options": [
+          "Alps",
+          "Ural Mountains",
+          "Pyrenees",
+          "Carpathians"
+        ],
+        "answer": "Ural Mountains"
+      },
+      {
+        "index " : 3,
+        "category": "The Land",
+        "question": "What is the highest mountain in Europe?",
+        "options": [
+          "Mount Elbrus",
+          "Mont Blanc",
+          "Matterhorn",
+          "Mount Everest"
+        ],
+        "answer": "Mount Elbrus"
+      },
+      {
+        "index " : 4,
+        "category": "The Land",
+        "question": "Which is the largest country in Europe by area?",
+        "options": [
+          "Germany",
+          "France",
+          "Russia",
+          "Spain"
+        ],
+        "answer": "Russia"
+      },
+      {
+        "index " : 5,
+        "category": "The Land",
+        "question": "Which sea is to the south of Europe?",
+        "options": [
+          "Mediterranean Sea",
+          "Black Sea",
+          "Baltic Sea",
+          "North Sea"
+        ],
+        "answer": "Mediterranean Sea"
+      },
+      {
+        "index " : 6,
+        "category": "The Land",
+        "question": "What type of animal is a reindeer, found in northern Europe?",
+        "options": [
+          "Bird",
+          "Reptile",
+          "Mammal",
+          "Fish"
+        ],
+        "answer": "Mammal"
+      },
+      {
+        "index " : 7,
+        "category": "The Land",
+        "question": "Which river flows through London, the capital of England?",
+        "options": [
+          "Seine River",
+          "Danube River",
+          "Volga River",
+          "Thames River"
+        ],
+        "answer": "Thames River"
+      },
+      {
+        "index " : 8,
+        "category": "The Land",
+        "question": "Which large forest is famous in Germany?",
+        "options": [
+          "Amazon Rainforest",
+          "Black Forest",
+          "Sherwood Forest",
+          "Redwood Forest"
+        ],
+        "answer": "Black Forest"
+      },
+      {
+        "index " : 9,
+        "category": "The Land",
+        "question": "Which animal is a symbol of Scotland and is known for its long horns?",
+        "options": [
+          "Highland Cow",
+          "Reindeer",
+          "Elk",
+          "Goat"
+        ],
+        "answer": "Highland Cow"
+      },
+      {
+        "index " : 10,
+        "category": "The Land",
+        "question": "Which European country is famous for its windmills and tulips?",
+        "options": [
+          "Germany",
+          "Netherlands",
+          "Spain",
+          "Italy"
+        ],
+        "answer": "Netherlands"
+      },
+      {
+        "index " : 11,
+        "category": "The Land",
+        "question": "Which European country has many fjords, long and narrow sea inlets?",
+        "options": [
+          "France",
+          "Italy",
+          "Norway",
+          "Greece"
+        ],
+        "answer": "Norway"
+      },
+      {
+        "index " : 12,
+        "category": "The Land",
+        "question": "Which river is the longest in Germany?",
+        "options": [
+          "Danube River",
+          "Rhine River",
+          "Thames River",
+          "Seine River"
+        ],
+        "answer": "Rhine River"
+      },
+      {
+        "index " : 13,
+        "category": "The Land",
+        "question": "Which mountain range forms the natural border between France and Spain?",
+        "options": [
+          "Alps",
+          "Pyrenees",
+          "Carpathians",
+          "Ural Mountains"
+        ],
+        "answer": "Pyrenees"
+      },
+      {
+        "index " : 14,
+        "category": "The Land",
+        "question": "Which country in Europe is famous for the Eiffel Tower?",
+        "options": [
+          "Spain",
+          "Italy",
+          "France",
+          "Germany"
+        ],
+        "answer": "France"
+      },
+      {
+        "index " : 15,
+        "category": "The Land",
+        "question": "Which large island country is located to the northwest of mainland Europe?",
+        "options": [
+          "Iceland",
+          "Ireland",
+          "United Kingdom",
+          "Malta"
+        ],
+        "answer": "United Kingdom"
+      },
+      {
+        "index " : 16,
+        "category": "The Land",
+        "question": "Which European country is known for the Leaning Tower of Pisa?",
+        "options": [
+          "Spain",
+          "Italy",
+          "Greece",
+          "France"
+        ],
+        "answer": "Italy"
+      },
+      {
+        "index " : 17,
+        "category": "The Land",
+        "question": "Which sea separates the United Kingdom from mainland Europe?",
+        "options": [
+          "Mediterranean Sea",
+          "Baltic Sea",
+          "North Sea",
+          "Black Sea"
+        ],
+        "answer": "North Sea"
+      },
+      {
+        "index " : 18,
+        "category": "The Land",
+        "question": "Which European country is famous for its lakes and mountains, especially the Alps?",
+        "options": [
+          "Switzerland",
+          "Germany",
+          "Spain",
+          "Norway"
+        ],
+        "answer": "Switzerland"
+      },
+      {
+        "index " : 19,
+        "category": "The Land",
+        "question": "Which river flows through Paris, the capital of France?",
+        "options": [
+          "Danube River",
+          "Rhine River",
+          "Seine River",
+          "Thames River"
+        ],
+        "answer": "Seine River"
+      },
+      {
+        "index " : 20,
+        "category": "The Land",
+        "question": "Which European country is known for its castles and dragons in folklore?",
+        "options": [
+          "Germany",
+          "Scotland",
+          "Wales",
+          "Denmark"
+        ],
+        "answer": "Wales"
+      },
+      {
+        "index " : 21,
+        "category": "The Land",
+        "question": "Which bird is the national symbol of Germany?",
+        "options": [
+          "Eagle",
+          "Swan",
+          "Owl",
+          "Falcon"
+        ],
+        "answer": "Eagle"
+      },
+      {
+        "index " : 22,
+        "category": "The Land",
+        "question": "Which European island is known for its volcanic activity?",
+        "options": [
+          "Sicily",
+          "Cyprus",
+          "Iceland",
+          "Crete"
+        ],
+        "answer": "Iceland"
+      },
+      {
+        "index " :23,
+        "category": "The Land",
+        "question": "Which European country is famous for its beautiful blue and white buildings on the islands?",
+        "options": [
+          "Italy",
+          "Greece",
+          "Spain",
+          "Portugal"
+        ],
+        "answer": "Greece"
+      },
+      {
+        "index " : 24,
+        "category": "The Land",
+        "question": "Which large forest is located in northern Europe and is known for its dense trees and wildlife?",
+        "options": [
+          "Amazon Rainforest",
+          "Taiga Forest",
+          "Black Forest",
+          "Sherwood Forest"
+        ],
+        "answer": "Taiga Forest"
+      },
+      {
+        "index " : 25,
+        "category": "The Land",
+        "question": "Which European country is famous for its polar bears and northern lights?",
+        "options": [
+          "Sweden",
+          "Finland",
+          "Norway",
+          "Iceland"
+        ],
+        "answer": "Norway"
+      },
+      {
+        "index " : 26,
+        "category": "The Land",
+        "question": "Which European animal is known for its howling and lives in forests?",
+        "options": [
+          "Wolf",
+          "Bear",
+          "Fox",
+          "Deer"
+        ],
+        "answer": "Wolf"
+      },
+      {
+        "index " : 27,
+        "category": "The Land",
+        "question": "Which European country is famous for the Colosseum, an ancient arena?",
+        "options": [
+          "France",
+          "Italy",
+          "Greece",
+          "Spain"
+        ],
+        "answer": "Italy"
+      },
+      {
+        "index " : 28,
+        "category": "The Land",
+        "question": "Which European country has a large forest called Sherwood Forest, home of Robin Hood?",
+        "options": [
+          "France",
+          "Spain",
+          "United Kingdom",
+          "Germany"
+        ],
+        "answer": "United Kingdom"
+      },
+      {
+        "index " : 29,
+        "category": "The Land",
+        "question": "Which European mountain is known as 'the Matterhorn' and is one of the most famous in the Alps?",
+        "options": [
+          "Mont Blanc",
+          "Mount Elbrus",
+          "Matterhorn",
+          "Mount Everest"
+        ],
+        "answer": "Matterhorn"
+      },
+      {
+        "index " : 30,
+        "category": "The Land",
+        "question": "Which European river is known for flowing through many countries, including Germany and Austria?",
+        "options": [
+          "Rhine River",
+          "Danube River",
+          "Seine River",
+          "Volga River"
+        ],
+        "answer": "Danube River"
+      },
+      {
+        "category": "The People",
+        "question": "What is the capital city of France?",
+        "options": ["Rome", "Berlin", "Paris", "Madrid"],
+        "answer": "Paris"
+      },
+      {
+        "category": "The People",
+        "question": "Which European country is famous for the city of Rome?",
+        "options": ["Spain", "Italy", "Greece", "Germany"],
+        "answer": "Italy"
+      },
+      {
+        "category": "The People",
+        "question": "Which European country is famous for the story of Dracula?",
+        "options": ["Romania", "Hungary", "Poland", "Germany"],
+        "answer": "Romania"
+      },
+      {
+        "category": "The People",
+        "question": "Which European country is known for its traditional dance called Flamenco?",
+        "options": ["Italy", "France", "Spain", "Greece"],
+        "answer": "Spain"
+      },
+      {
+        "category": "The People",
+        "question": "Which European country is famous for its chocolates and waffles?",
+        "options": ["France", "Belgium", "Germany", "Italy"],
+        "answer": "Belgium"
+      },
+      {
+        "category": "The People",
+        "question": "Which European country has a royal family and is known for the Queen's Guard?",
+        "options": ["France", "Spain", "United Kingdom", "Italy"],
+        "answer": "United Kingdom"
+      },
+      {
+        "category": "The People",
+        "question": "Which European city is known for the Eiffel Tower?",
+        "options": ["London", "Paris", "Rome", "Madrid"],
+        "answer": "Paris"
+      },
+      {
+        "category": "The People",
+        "question": "Which European country is famous for its sausages and Oktoberfest?",
+        "options": ["France", "Italy", "Germany", "Greece"],
+        "answer": "Germany"
+      },
+      {
+        "category": "The People",
+        "question": "Which European country is known for its pizza and pasta?",
+        "options": ["France", "Italy", "Spain", "Greece"],
+        "answer": "Italy"
+      },
+      {
+        "category": "The People",
+        "question": "Which European country is famous for its windmills and wooden shoes called clogs?",
+        "options": ["Spain", "Italy", "Netherlands", "France"],
+        "answer": "Netherlands"
+      },
+      {
+        "category": "The People",
+        "question": "Which European country is known for the ancient Olympics?",
+        "options": ["Italy", "Greece", "Spain", "Germany"],
+        "answer": "Greece"
+      },
+      {
+        "category": "The People",
+        "question": "Which European country is known for the city of Venice, famous for its canals?",
+        "options": ["France", "Italy", "Spain", "Germany"],
+        "answer": "Italy"
+      },
+      {
+        "category": "The People",
+        "question": "Which European country is famous for the city of Athens, known for its ancient history?",
+        "options": ["Greece", "Italy", "France", "Spain"],
+        "answer": "Greece"
+      },
+      {
+        "category": "The People",
+        "question": "Which European country is famous for its beer and pretzels?",
+        "options": ["France", "Spain", "Germany", "Italy"],
+        "answer": "Germany"
+      },
+      {
+        "category": "The People",
+        "question": "Which European country is known for its tulip gardens and canals?",
+        "options": ["Netherlands", "France", "Italy", "Spain"],
+        "answer": "Netherlands"
+      },
+      {
+        "category": "The People",
+        "question": "Which European city is famous for Big Ben?",
+        "options": ["Paris", "Rome", "London", "Madrid"],
+        "answer": "London"
+      },
+      {
+        "category": "The People",
+        "question": "Which European country is known for its castles and the story of King Arthur?",
+        "options": ["France", "Spain", "United Kingdom", "Germany"],
+        "answer": "United Kingdom"
+      },
+      {
+        "category": "The People",
+        "question": "Which European country is famous for the story of Hansel and Gretel?",
+        "options": ["Germany", "France", "Italy", "Spain"],
+        "answer": "Germany"
+      },
+      {
+        "category": "The People",
+        "question": "Which European country is known for the Loch Ness Monster?",
+        "options": ["Germany", "Scotland", "France", "Italy"],
+        "answer": "Scotland"
+      },
+      {
+        "category": "The People",
+        "question": "Which European country is famous for its ski resorts in the Alps?",
+        "options": ["Switzerland", "France", "Germany", "Italy"],
+        "answer": "Switzerland"
+      },
+      {
+        "category": "The People",
+        "question": "Which European country is known for its Viking history?",
+        "options": ["France", "Italy", "Norway", "Germany"],
+        "answer": "Norway"
+      },
+      {
+        "category": "The People",
+        "question": "Which European country is famous for the Mona Lisa painting?",
+        "options": ["Italy", "France", "Spain", "Germany"],
+        "answer": "France"
+      },
+      {
+        "category": "The People",
+        "question": "Which European country is known for its fjords, long and narrow sea inlets?",
+        "options": ["Germany", "Norway", "France", "Italy"],
+        "answer": "Norway"
+      },
+      {
+        "category": "The People",
+        "question": "Which European country is famous for the story of Cinderella?",
+        "options": ["France", "Germany", "Italy", "Spain"],
+        "answer": "France"
+      },
+      {
+        "category": "The People",
+        "question": "Which European country is famous for its castles and medieval towns?",
+        "options": ["Germany", "France", "Italy", "Spain"],
+        "answer": "Germany"
+      },
+      {
+        "category": "The People",
+        "question": "Which European country is known for its leprechauns and shamrocks?",
+        "options": ["Germany", "Ireland", "Italy", "Spain"],
+        "answer": "Ireland"
+      },
+      {
+        "category": "The People",
+        "question": "Which European country is known for its red double-decker buses?",
+        "options": ["Germany", "United Kingdom", "Italy", "Spain"],
+        "answer": "United Kingdom"
+      },
+      {
+        "category": "The People",
+        "question": "Which European country is famous for its castles and dragons in legends?",
+        "options": ["Germany", "Wales", "Italy", "Spain"],
+        "answer": "Wales"
+      },
+      {
+        "category": "The People",
+        "question": "Which European country is known for its bagpipes and kilts?",
+        "options": ["Germany", "Scotland", "Italy", "Spain"],
+        "answer": "Scotland"
+      },
+      {
+        "category": "The Economy",
+        "question": "Which European country is known for making luxury cars like BMW and Mercedes-Benz?",
+        "options": ["France", "Italy", "Germany", "Spain"],
+        "answer": "Germany"
+      },
+      {
+        "category": "The Economy",
+        "question": "Which European country is famous for making fine chocolates and watches?",
+        "options": ["Germany", "Switzerland", "France", "Italy"],
+        "answer": "Switzerland"
+      },
+      {
+        "category": "The Economy",
+        "question": "Which European country is known for making fashion brands like Chanel and Dior?",
+        "options": ["Germany", "Italy", "France", "Spain"],
+        "answer": "France"
+      },
+      {
+        "category": "The Economy",
+        "question": "Which European country is famous for its pasta and pizza?",
+        "options": ["France", "Spain", "Italy", "Germany"],
+        "answer": "Italy"
+      },
+      {
+        "category": "The Economy",
+        "question": "Which European country is known for producing a lot of olive oil?",
+        "options": ["Germany", "Italy", "Greece", "Spain"],
+        "answer": "Spain"
+      },
+      {
+        "category": "The Economy",
+        "question": "Which European country is famous for making fine wines and cheese?",
+        "options": ["Germany", "France", "Italy", "Spain"],
+        "answer": "France"
+      },
+      {
+        "category": "The Economy",
+        "question": "Which European country is known for its banking industry?",
+        "options": ["Germany", "Switzerland", "France", "Italy"],
+        "answer": "Switzerland"
+      },
+      {
+        "category": "The Economy",
+        "question": "Which European country is known for its watchmaking and chocolate industry?",
+        "options": ["Germany", "Switzerland", "France", "Italy"],
+        "answer": "Switzerland"
+      },
+      {
+        "category": "The Economy",
+        "question": "Which European country is famous for its fashion brands like Gucci and Prada?",
+        "options": ["Germany", "Italy", "France", "Spain"],
+        "answer": "Italy"
+      },
+      {
+        "category": "The Economy",
+        "question": "Which European country is known for producing cars like Ferrari and Lamborghini?",
+        "options": ["Germany", "Italy", "France", "Spain"],
+        "answer": "Italy"
+      },
+      {
+        "category": "The Economy",
+        "question": "Which European country is known for its beer production, especially in Bavaria?",
+        "options": ["Germany", "France", "Italy", "Spain"],
+        "answer": "Germany"
+      },
+      {
+        "category": "The Economy",
+        "question": "Which European country is famous for its watches and banks?",
+        "options": ["France", "Switzerland", "Germany", "Italy"],
+        "answer": "Switzerland"
+      },
+      {
+        "category": "The Economy",
+        "question": "Which European country is known for making famous sports cars like Porsche?",
+        "options": ["France", "Germany", "Italy", "Spain"],
+        "answer": "Germany"
+      },
+      {
+        "category": "The Economy",
+        "question": "Which European country is famous for its perfume industry?",
+        "options": ["Germany", "France", "Italy", "Spain"],
+        "answer": "France"
+      },
+      {
+        "category": "The Economy",
+        "question": "Which European country is known for producing a lot of cheese?",
+        "options": ["France", "Switzerland", "Germany", "Italy"],
+        "answer": "France"
+      },
+      {
+        "category": "The Economy",
+        "question": "Which European country is famous for making luxury cars like Audi and Volkswagen?",
+        "options": ["Germany", "Italy", "France", "Spain"],
+        "answer": "Germany"
+      },
+      {
+        "category": "The Economy",
+        "question": "Which European country is known for its pizza and gelato?",
+        "options": ["Germany", "France", "Italy", "Spain"],
+        "answer": "Italy"
+      },
+      {
+        "category": "The Economy",
+        "question": "Which European country is known for producing a lot of wine, especially in Tuscany?",
+        "options": ["Germany", "Italy", "France", "Spain"],
+        "answer": "Italy"
+      },
+      {
+        "category": "The Economy",
+        "question": "Which European country is famous for its fashion industry in Paris?",
+        "options": ["Germany", "Italy", "France", "Spain"],
+        "answer": "France"
+      },
+      {
+        "category": "The Economy",
+        "question": "Which European country is known for making luxury chocolates like Lindt?",
+        "options": ["Germany", "Switzerland", "France", "Italy"],
+        "answer": "Switzerland"
+      },
+      {
+        "category": "The Economy",
+        "question": "Which European country is known for producing a lot of pasta?",
+        "options": ["France", "Italy", "Germany", "Spain"],
+        "answer": "Italy"
+      },
+      {
+        "category": "The Economy",
+        "question": "Which European country is famous for making perfume brands like Chanel?",
+        "options": ["France", "Italy", "Germany", "Spain"],
+        "answer": "France"
+      },
+      {
+        "category": "The Economy",
+        "question": "Which European country is known for making bicycles like Trek and Bianchi?",
+        "options": ["Germany", "Italy", "France", "Spain"],
+        "answer": "Italy"
+      },
+      {
+        "category": "The Economy",
+        "question": "Which European country is famous for its vineyards and wine production in Bordeaux?",
+        "options": ["Germany", "Italy", "France", "Spain"],
+        "answer": "France"
+      },
+      {
+        "category": "The Economy",
+        "question": "Which European country is known for its dairy products, especially cheese and milk?",
+        "options": ["Germany", "Switzerland", "France", "Italy"],
+        "answer": "Switzerland"
+      },
+      {
+        "category": "The Economy",
+        "question": "Which European country is famous for making shoes like Clarks?",
+        "options": ["Germany", "Italy", "United Kingdom", "France"],
+        "answer": "United Kingdom"
+      },
+      {
+        "category": "The Economy",
+        "question": "Which European country is known for its leather goods, especially handbags?",
+        "options": ["Germany", "Italy", "France", "Spain"],
+        "answer": "Italy"
+      },
+      {
+        "category": "The Economy",
+        "question": "Which European country is famous for making sausages and beer?",
+        "options": ["Germany", "France", "Italy", "Spain"],
+        "answer": "Germany"
+      },
+      {
+        "category": "The Economy",
+        "question": "Which European country is known for producing luxury goods like jewelry and watches?",
+        "options": ["France", "Italy", "Switzerland", "Spain"],
+        "answer": "Switzerland"
+      },
+      {
+        "category": "The Economy",
+        "question": "Which European country is known for its leather products, especially in Florence?",
+        "options": ["Germany", "Italy", "France", "Spain"],
+        "answer": "Italy"
+      }
+    ]
+  }
+  

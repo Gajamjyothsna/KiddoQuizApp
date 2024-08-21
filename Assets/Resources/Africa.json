@@ -1,0 +1,995 @@
+{
+    "questions" :[
+        {
+            "category": "The Land",
+            "question": "What is the biggest lake in Africa?",
+            "options": [
+                "Lake Malawi",
+                "Lake Victoria",
+                "Lake Kivu",
+                "Great Basin Desert"
+            ],
+            "answer": "Lake Victoria"
+        },
+        {
+            "category": "The Land",
+            "question": "Which river is the longest in Africa?",
+            "options": [
+                "Congo",
+                "Orange",
+                "Nile",
+                "Zambezi"
+            ],
+            "answer": "Nile"
+        },
+        {
+            "category": "The Land",
+            "question": "What is the name of the largest desert in Africa?",
+            "options": [
+                "Sahara",
+                "Libyan",
+                "Kalahari",
+                "Namib"
+            ],
+            "answer": "Sahara"
+        },
+        {
+            "category": "The Land",
+            "question": "What is the highest mountain in Africa called?",
+            "options": [
+                "Mount Kilimanjaro",
+                "Mount Baker",
+                "Mount Kenya",
+                "Mount Stanley"
+            ],
+            "answer": "Mount Kilimanjaro"
+        },
+        {
+            "category": "The Land",
+            "question": "What is the name of the big waterfall called 'Mosi-oa-Tunya'?",
+            "options": [
+                "Great Rift Valley",
+                "River Nile",
+                "Victoria Falls",
+                "Cape Town City"
+            ],
+            "answer": "Victoria Falls"
+        },
+        {
+            "category": "The Land",
+            "question": "Which river was very important to the ancient people of Egypt?",
+            "options": [
+                "Orange",
+                "Niger",
+                "Congo",
+                "Nile"
+            ],
+            "answer": "Nile"
+        },
+        {
+            "category": "The Land",
+            "question": "Which mountain is the highest in Africa?",
+            "options": [
+                "Mount Kilimanjaro",
+                "Mount Baker",
+                "Mount Kenya",
+                "Mount Stanley"
+            ],
+            "answer": "Mount Kilimanjaro"
+        },
+        {
+            "category": "The Land",
+            "question": "What is the name of the valley that runs from the Sinai Peninsula to Mozambique?",
+            "options": [
+                "Andes Mountains",
+                "Great Rift Valley",
+                "Jordan Rift Valley",
+                "East African Rift"
+            ],
+            "answer": "Great Rift Valley"
+        },
+        {
+            "category": "The Land",
+            "question": "Which big waterfall lies between Zambia and Zimbabwe?",
+            "options": [
+                "Victoria Falls",
+                "Orange River",
+                "Great Rift Valley",
+                "Kalahari Desert"
+            ],
+            "answer": "Victoria Falls"
+        },
+        {
+            "category": "The Land",
+            "question": "What is the closest living relative of the hippo?",
+            "options": [
+                "Warthog",
+                "Rhinoceros",
+                "Elephant",
+                "Whale"
+            ],
+            "answer": "Whale"
+        },
+        {
+            "category": "The Land",
+            "question": "Which big cat is the largest in Africa and likes to rest in the sun?",
+            "options": [
+                "Caracal",
+                "Leopard",
+                "Cheetah",
+                "Lion"
+            ],
+            "answer": "Lion"
+        },
+        {
+            "category": "The Land",
+            "question": "Which animal likes to be alone instead of being in a group?",
+            "options": [
+                "African Wild Dog",
+                "Hyena",
+                "Leopard",
+                "Jackal"
+            ],
+            "answer": "Leopard"
+        },
+        {
+            "category": "The Land",
+            "question": "What is a male zebra called?",
+            "options": [
+                "Stallion",
+                "Bull",
+                "Stag",
+                "Buck"
+            ],
+            "answer": "Stallion"
+        },
+        {
+            "category": "The Land",
+            "question": "How do African elephants mostly talk to each other?",
+            "options": [
+                "Bumbling",
+                "Rumbling",
+                "Mumbling",
+                "Grumbling"
+            ],
+            "answer": "Rumbling"
+        },
+        {
+            "category": "The Land",
+            "question": "Which of these primates is from the Congo lowlands?",
+            "options": [
+                "Orangutan",
+                "Lemur",
+                "Bonobo",
+                "Snow Monkey"
+            ],
+            "answer": "Bonobo"
+        },
+        {
+            "category": "The Land",
+            "question": "How much food does an adult giraffe eat each day?",
+            "options": [
+                "100 kg",
+                "65 kg",
+                "50 kg",
+                "10 kg"
+            ],
+            "answer": "65 kg"
+        },
+        {
+            "category": "The Land",
+            "question": "Which of these animals is not from Africa?",
+            "options": [
+                "Yak",
+                "Gazelle",
+                "Hyena",
+                "Giraffe"
+            ],
+            "answer": "Yak"
+        },
+        {
+            "category": "The Land",
+            "question": "Which African desert’s name means 'an area where there is nothing'?",
+            "options": [
+                "Namib Desert",
+                "Karoo Desert",
+                "Kalahari Desert",
+                "Guban Desert"
+            ],
+            "answer": "Namib Desert"
+        },
+        {
+            "category": "The Land",
+            "question": "Which lake is the largest in Africa and the main reservoir of the Nile?",
+            "options": [
+                "Lake Chad",
+                "Lake Victoria",
+                "Lake Malawi",
+                "Lake Tanganyika"
+            ],
+            "answer": "Lake Victoria"
+        },
+        {
+            "category": "The Land",
+            "question": "Which African river flows into the Indian Ocean?",
+            "options": [
+                "Luangwa River",
+                "Kowie River",
+                "Mania River",
+                "Zambezi River"
+            ],
+            "answer": "Zambezi River"
+        },
+        {
+            "category": "The Land",
+            "question": "Which of the following separates Africa from Europe?",
+            "options": [
+                "Mediterranean Sea",
+                "Red Sea",
+                "Caspian Sea",
+                "Arabian Sea"
+            ],
+            "answer": "Mediterranean Sea"
+        },
+        {
+            "category": "The Land",
+            "question": "Which river flows through Victoria Falls?",
+            "options": [
+                "Nile River",
+                "Congo River",
+                "Zambezi River",
+                "Niger River"
+            ],
+            "answer": "Zambezi River"
+        },
+        {
+            "category": "The Land",
+            "question": "Which is Africa's longest lake?",
+            "options": [
+                "Lake Tanganyika",
+                "Lake Victoria",
+                "Lake Malawi",
+                "Lake Kivu"
+            ],
+            "answer": "Lake Tanganyika"
+        },
+        {
+            "category": "The Land",
+            "question": "Which river flows into the Atlantic Ocean?",
+            "options": [
+                "Nile River",
+                "Congo River",
+                "Zambezi River",
+                "Niger River"
+            ],
+            "answer": "Congo River"
+        },
+        {
+            "category": "The Land",
+            "question": "Which of these African countries has both deserts and tropical forests?",
+            "options": [
+                "Egypt",
+                "South Africa",
+                "Nigeria",
+                "Kenya"
+            ],
+            "answer": "South Africa"
+        },
+        {
+            "category": "The Land",
+            "question": "Which animal is known as the 'king of the jungle'?",
+            "options": [
+                "Elephant",
+                "Lion",
+                "Leopard",
+                "Cheetah"
+            ],
+            "answer": "Lion"
+        },
+        {
+            "category": "The Land",
+            "question": "Which of these animals is the fastest on land?",
+            "options": [
+                "Elephant",
+                "Lion",
+                "Leopard",
+                "Cheetah"
+            ],
+            "answer": "Cheetah"
+        },
+        {
+            "category": "The Land",
+            "question": "Which African country has famous pyramids?",
+            "options": [
+                "Kenya",
+                "Nigeria",
+                "Egypt",
+                "Morocco"
+            ],
+            "answer": "Egypt"
+        },
+        {
+            "category": "The Land",
+            "question": "What kind of animal is a giraffe?",
+            "options": [
+                "Reptile",
+                "Bird",
+                "Mammal",
+                "Amphibian"
+            ],
+            "answer": "Mammal"
+        },
+        {
+            "category": "The Land",
+            "question": "Which African lake is the second deepest in the world?",
+            "options": [
+                "Lake Victoria",
+                "Lake Tanganyika",
+                "Lake Malawi",
+                "Lake Chad"
+            ],
+            "answer": "Lake Tanganyika"
+        },
+        {
+            "category": "The People",
+            "question": "Which language is spoken on the east coast of Africa?",
+            "options": [
+                 "Cushitic Language",
+                 "Swahili Language",
+                 "Songhay Language",
+                 "Malagasy Language"
+            ],
+            "answer": "Swahili Language"
+        },
+        {
+            "category": "The People",
+            "question": "Which ethnic group is found in Burkina Faso?",
+            "options": [
+                 "Ewe",
+                 "Igbira",
+                 "Yoruba",
+                 "Mossi"
+            ],
+            "answer": "Mossi"
+        },
+        {
+            "category": "The People",
+            "question": "What is the major city in central Morocco?",
+            "options": [
+                "Rabat",
+                 "Casablanca",
+                 "Agadir",
+                 "Marrakech"
+            ],
+            "answer": "Marrakech"
+        },
+        {
+            "category": "The People",
+            "question": "Which is the largest ethnic group in South Africa?",
+            "options": [
+                 "Zulu",
+                 "Khoekhoe",
+                 "Huru",
+                 "Bantu"
+            ],
+            "answer": "Zulu"
+        },
+        {
+            "category": "The People",
+            "question": "Where is Olduvai Gorge, a famous archaeological site?",
+            "options": [
+                "Kenya",
+                 "Botswana",
+                 "Tanzania",
+                 "Ethiopia"
+            ],
+            "answer": "Tanzania"
+        },
+        {
+            "category": "The People",
+            "question": "Afrikaans is a variety of which European language?",
+            "options": [
+                "Dutch",
+                 "French",
+                 "Russian",
+                 "English"
+            ],
+            "answer": "Dutch"
+        },
+        {
+            "category": "The People",
+            "question": "In and around which desert do the Bushmen live?",
+            "options": [
+                 "Sahara Desert",
+                 "Kalahari Desert",
+                 "Namib Desert",
+                 "Libyan Desert"
+            ],
+            "answer": "Kalahari Desert"
+        },
+        {
+            "category": "The People",
+            "question": "In which country do 99% of the people live near the River Nile?",
+            "options": [
+                "South Africa",
+                 "Ethiopia",
+                 "Nigeria",
+                 "Egypt"
+            ],
+            "answer": "Egypt"
+        },
+        {
+            "category": "The People",
+            "question": "Which is the most spoken language in Africa?",
+            "options": [
+                "Afrikaans",
+                 "Arabic",
+                 "English",
+                 "Swahili"
+            ],
+            "answer": "Arabic"
+        },
+        {
+            "category": "The People",
+            "question": "Which African country is home to over 200 languages?",
+            "options": [
+                "Egypt",
+                 "South Africa",
+                 "Nigeria",
+                 "Cameroon"
+            ],
+            "answer": "Nigeria"
+        },
+        {
+            "category": "The People",
+            "question": "What do you call a person from Nigeria?",
+            "options": [
+                "Nigerese",
+                 "Nigerian",
+                 "Niger",
+                 "Naijan"
+            ],
+            "answer": "Nigerian"
+        },
+        {
+            "category": "The People",
+            "question": "Which ethnic group is famous for their beadwork and bright clothes?",
+            "options": [
+                 "Zulu",
+                 "Maasai",
+                 "Yoruba",
+                 "Bushmen"
+            ],
+            "answer": "Maasai"
+        },
+        {
+            "category": "The People",
+            "question": "Which people live in the Sahara Desert?",
+            "options": [
+                 "Tuareg",
+                 "Maasai",
+                 "Zulu",
+                 "Yoruba"
+            ],
+            "answer": "Tuareg"
+        },
+        {
+            "category": "The People",
+            "question": "Which country in Africa has pyramids?",
+            "options": [
+                 "Kenya",
+                 "Morocco",
+                 "Sudan",
+                 "Egypt"
+            ],
+            "answer": "Egypt"
+        },
+        {
+            "category": "The People",
+            "question": "Which language is mostly spoken in Egypt?",
+            "options": [
+                 "Swahili",
+                 "Arabic",
+                 "French",
+                 "Hausa"
+            ],
+            "answer": "Arabic"
+        },
+        {
+            "category": "The People",
+            "question": "Which African country was never colonized?",
+            "options": [
+                 "Ethiopia",
+                 "Nigeria",
+                 "South Africa",
+                 "Ghana"
+            ],
+            "answer": "Ethiopia"
+        },
+        {
+            "category": "The People",
+            "question": "What is the capital city of Nigeria?",
+            "options": [
+                 "Lagos",
+                 "Abuja",
+                 "Cairo",
+                 "Nairobi"
+            ],
+            "answer": "Abuja"
+        },
+        {
+            "category": "The People",
+            "question": "Which of these countries is in East Africa?",
+            "options": [
+                 "Nigeria",
+                 "South Africa",
+                 "Kenya",
+                 "Morocco"
+            ],
+            "answer": "Kenya"
+        },
+        {
+            "category": "The People",
+            "question": "Which African country is known for having lots of islands?",
+            "options": [
+                 "Kenya",
+                 "Nigeria",
+                 "Madagascar",
+                 "Ghana"
+            ],
+            "answer": "Madagascar"
+        },
+        {
+            "category": "The People",
+            "question": "Which African country is the biggest by area?",
+            "options": [
+                 "Egypt",
+                 "Nigeria",
+                 "Sudan",
+                 "Algeria"
+            ],
+            "answer": "Algeria"
+        },
+        {
+            "category": "The People",
+            "question": "Which African country has the most people?",
+            "options": [
+                 "Egypt",
+                 "Nigeria",
+                 "South Africa",
+                 "Ethiopia"
+            ],
+            "answer": "Nigeria"
+        },
+        {
+            "category": "The People",
+            "question": "Which is the smallest country in Africa?",
+            "options": [
+                 "Seychelles",
+                 "Lesotho",
+                 "Comoros",
+                 "Swaziland"
+            ],
+            "answer": "Seychelles"
+        },
+        {
+            "category": "The People",
+            "question": "What language do people in South Africa speak?",
+            "options": [
+                 "French",
+                 "Arabic",
+                 "English",
+                 "Zulu"
+            ],
+            "answer": "English"
+        },
+        {
+            "category": "The People",
+            "question": "Which ethnic group lives mostly in Ghana?",
+            "options": [
+                 "Yoruba",
+                 "Ashanti",
+                 "Zulu",
+                 "Hutu"
+            ],
+            "answer": "Ashanti"
+        },
+        {
+            "category": "The People",
+            "question": "Which is the main religion in North Africa?",
+            "options": [
+                 "Islam",
+                 "Christianity",
+                 "Judaism",
+                 "Hinduism"
+            ],
+            "answer": "Islam"
+        },
+        {
+            "category": "The People",
+            "question": "Which is the main religion in Ethiopia?",
+            "options": [
+                 "Islam",
+                 "Christianity",
+                 "Judaism",
+                 "Hinduism"
+            ],
+            "answer": "Christianity"
+        },
+        {
+            "category": "The People",
+            "question": "Which people in Africa are known for their dancing and drumming?",
+            "options": [
+                 "Zulu",
+                 "Maasai",
+                 "Yoruba",
+                 "Ashanti"
+            ],
+            "answer": "Yoruba"
+        },
+        {
+            "category": "The People",
+            "question": "Which country is known for its spicy food?",
+            "options": [
+                 "Kenya",
+                 "Morocco",
+                 "Ghana",
+                 "Ethiopia"
+            ],
+            "answer": "Morocco"
+        },
+        {
+            "category": "The People",
+            "question": "What do people in Kenya celebrate with a big feast?",
+            "options": [
+                 "Christmas",
+                 "Easter",
+                 "Eid",
+                 "Mashujaa Day"
+            ],
+            "answer": "Mashujaa Day"
+        },
+        {
+            "category": "The People",
+            "question": "Which African country has three capital cities?",
+            "options": [
+                 "Nigeria",
+                 "South Africa",
+                 "Kenya",
+                 "Egypt"
+            ],
+            "answer": "South Africa"
+        },
+        {
+            "category": "The Economy",
+            "question": "Which country has the strongest economy in Africa?",
+            "options": [
+                "Egypt",
+                "South Africa",
+                "Nigeria",
+                "Algeria"
+            ],
+            "answer": "Nigeria"
+        },
+        {
+            "category": "The Economy",
+            "question": "What does South Africa specialize in?",
+            "options": [
+                "Gold, diamonds and platinum",
+                "Oil",
+                "Textile Manufacturing",
+                "High Quality Cotton"
+            ],
+            "answer": "Gold, diamonds and platinum"
+        },
+        {
+            "category": "The Economy",
+            "question": "Which country has the rand as its currency?",
+            "options": [
+                "Egypt",
+                "South Africa",
+                "Nigeria",
+                "Sudan"
+            ],
+            "answer": "South Africa"
+        },
+        {
+            "category": "The Economy",
+            "question": "What is the name shared by the currency units of Algeria and Tunisia?",
+            "options": [
+                "Rand",
+                "Dollar",
+                "Dinar",
+                "Rupee"
+            ],
+            "answer": "Dinar"
+        },
+        {
+            "category": "The Economy",
+            "question": "What is the artificial sea-level waterway in Egypt, connecting the Mediterranean Sea to the Red Sea?",
+            "options": [
+                "Rand",
+                "Suez Canal",
+                "Ling Canal",
+                "Subei Canal"
+            ],
+            "answer": "Suez Canal"
+        },
+        {
+            "category": "The Economy",
+            "question": "Which African country is the largest producer of cocoa?",
+            "options": [
+                "Ghana",
+                "Nigeria",
+                "Ivory Coast",
+                "Cameroon"
+            ],
+            "answer": "Ivory Coast"
+        },
+        {
+            "category": "The Economy",
+            "question": "Which African country is the largest producer of oil?",
+            "options": [
+                "Nigeria",
+                "Angola",
+                "Libya",
+                "Egypt"
+            ],
+            "answer": "Nigeria"
+        },
+        {
+            "category": "The Economy",
+            "question": "Which country is the largest producer of gold in Africa?",
+            "options": [
+                "Ghana",
+                "South Africa",
+                "Mali",
+                "Sudan"
+            ],
+            "answer": "South Africa"
+        },
+        {
+            "category": "The Economy",
+            "question": "Which African country is known for producing high-quality tea?",
+            "options": [
+                "Kenya",
+                "Nigeria",
+                "Ethiopia",
+                "Sudan"
+            ],
+            "answer": "Kenya"
+        },
+        {
+            "category": "The Economy",
+            "question": "Which African country is the biggest exporter of diamonds?",
+            "options": [
+                "Botswana",
+                "South Africa",
+                "Angola",
+                "Namibia"
+            ],
+            "answer": "Botswana"
+        },
+        {
+            "category": "The Economy",
+            "question": "Which country in Africa is the largest producer of copper?",
+            "options": [
+                "Zambia",
+                "Congo",
+                "South Africa",
+                "Namibia"
+            ],
+            "answer": "Zambia"
+        },
+        {
+            "category": "The Economy",
+            "question": "Which African country is the biggest exporter of coffee?",
+            "options": [
+                "Kenya",
+                "Nigeria",
+                "Ethiopia",
+                "Ghana"
+            ],
+            "answer": "Ethiopia"
+        },
+        {
+            "category": "The Economy",
+            "question": "Which country in Africa has the largest stock exchange?",
+            "options": [
+                "Nigeria",
+                "South Africa",
+                "Egypt",
+                "Kenya"
+            ],
+            "answer": "South Africa"
+        },
+        {
+            "category": "The Economy",
+            "question": "Which country is the largest exporter of iron ore in Africa?",
+            "options": [
+                "South Africa",
+                "Nigeria",
+                "Mauritania",
+                "Liberia"
+            ],
+            "answer": "South Africa"
+        },
+        {
+            "category": "The Economy",
+            "question": "Which African country is the largest producer of cotton?",
+            "options": [
+                "Egypt",
+                "Nigeria",
+                "Tanzania",
+                "Sudan"
+            ],
+            "answer": "Egypt"
+        },
+        {
+            "category": "The Economy",
+            "question": "Which country in Africa is known for its wine production?",
+            "options": [
+                "Kenya",
+                "Nigeria",
+                "South Africa",
+                "Morocco"
+            ],
+            "answer": "South Africa"
+        },
+        {
+            "category": "The Economy",
+            "question": "Which African country is the largest producer of sugarcane?",
+            "options": [
+                "Nigeria",
+                "Sudan",
+                "Egypt",
+                "South Africa"
+            ],
+            "answer": "South Africa"
+        },
+        {
+            "category": "The Economy",
+            "question": "Which African country has the largest natural gas reserves?",
+            "options": [
+                "Nigeria",
+                "Algeria",
+                "Egypt",
+                "Libya"
+            ],
+            "answer": "Algeria"
+        },
+        {
+            "category": "The Economy",
+            "question": "Which African country is the biggest exporter of flowers?",
+            "options": [
+                "Kenya",
+                "Nigeria",
+                "Ethiopia",
+                "Ghana"
+            ],
+            "answer": "Kenya"
+        },
+        {
+            "category": "The Economy",
+            "question": "Which African country is known for its leather goods?",
+            "options": [
+                "Morocco",
+                "South Africa",
+                "Nigeria",
+                "Kenya"
+            ],
+            "answer": "Morocco"
+        },
+        {
+            "category": "The Economy",
+            "question": "Which country is the largest producer of palm oil in Africa?",
+            "options": [
+                "Nigeria",
+                "Ghana",
+                "Cameroon",
+                "Ivory Coast"
+            ],
+            "answer": "Nigeria"
+        },
+        {
+            "category": "The Economy",
+            "question": "Which African country is known for its car manufacturing?",
+            "options": [
+                "South Africa",
+                "Nigeria",
+                "Egypt",
+                "Morocco"
+            ],
+            "answer": "South Africa"
+        },
+        {
+            "category": "The Economy",
+            "question": "Which African country is the largest producer of bananas?",
+            "options": [
+                "Uganda",
+                "Nigeria",
+                "Ghana",
+                "Kenya"
+            ],
+            "answer": "Uganda"
+        },
+        {
+            "category": "The Economy",
+            "question": "Which country in Africa is known for producing luxury perfumes?",
+            "options": [
+                "Egypt",
+                "Morocco",
+                "Nigeria",
+                "Kenya"
+            ],
+            "answer": "Morocco"
+        },
+        {
+            "category": "The Economy",
+            "question": "Which African country is the biggest exporter of tobacco?",
+            "options": [
+                "Zimbabwe",
+                "Nigeria",
+                "Malawi",
+                "South Africa"
+            ],
+            "answer": "Zimbabwe"
+        },
+        {
+            "category": "The Economy",
+            "question": "Which African country is known for its textile industry?",
+            "options": [
+                "Egypt",
+                "Nigeria",
+                "South Africa",
+                "Ethiopia"
+            ],
+            "answer": "Egypt"
+        },
+        {
+            "category": "The Economy",
+            "question": "Which country in Africa is known for producing luxury chocolate?",
+            "options": [
+                "Ghana",
+                "Ivory Coast",
+                "South Africa",
+                "Nigeria"
+            ],
+            "answer": "Ghana"
+        },
+        {
+            "category": "The Economy",
+            "question": "Which African country has the largest railway network?",
+            "options": [
+                "Nigeria",
+                "South Africa",
+                "Egypt",
+                "Kenya"
+            ],
+            "answer": "South Africa"
+        },
+        {
+            "category": "The Economy",
+            "question": "Which African country is known for its tourism industry?",
+            "options": [
+                "Kenya",
+                "South Africa",
+                "Egypt",
+                "Morocco"
+            ],
+            "answer": "Kenya"
+        },
+        {
+            "category": "The Economy",
+            "question": "Which African country is known for its jewelry production?",
+            "options": [
+                "Nigeria",
+                "South Africa",
+                "Morocco",
+                "Egypt"
+            ],
+            "answer": "South Africa"
+        }
+    ]
+    
+}
