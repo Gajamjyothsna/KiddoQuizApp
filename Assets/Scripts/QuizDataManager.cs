@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.IO;
 using UnityEngine;
 using UnityEditor;
 
@@ -8,12 +7,10 @@ public class QuizDataManager : MonoBehaviour
     [System.Serializable]
     public class Question
     {
-        public int index;
         public string category;
         public string question;
         public List<string> options;
         public string answer;
-        public string hint;
         public bool isAnswered = false;  // New field to track if the question is answered
     }
 
@@ -25,24 +22,41 @@ public class QuizDataManager : MonoBehaviour
 
     [SerializeField] private UIController _uiController;
     [SerializeField] private QuizDataScriptableObject quizDataScriptableObject;
+    [SerializeField] private List<string> jsonFileNames; // List of JSON file names (without extension)
+    [SerializeField] private int selectedJsonIndex = 0; // Index to select the specific JSON file
+
+    public string _continentName;
 
     private void OnValidate()
     {
-        if (quizDataScriptableObject != null)
+        if (quizDataScriptableObject != null && jsonFileNames != null && jsonFileNames.Count > 0)
         {
-            DeserializeJsonToScriptableObject();
+            // Ensure the index is within range
+            if (selectedJsonIndex >= 0 && selectedJsonIndex < jsonFileNames.Count)
+            {
+                DeserializeJsonToScriptableObject(jsonFileNames[selectedJsonIndex]);
+                _continentName = jsonFileNames[selectedJsonIndex];
+            }
+            else
+            {
+                Debug.LogWarning("Selected JSON index is out of range.");
+            }
+        }
+        else
+        {
+            Debug.LogWarning("QuizDataScriptableObject or jsonFileNames is not assigned or empty.");
         }
     }
 
-    private void DeserializeJsonToScriptableObject()
+    private void DeserializeJsonToScriptableObject(string fileName)
     {
-        string filePath = Path.Combine(Application.streamingAssetsPath, "questions.json");
+        TextAsset jsonFile = Resources.Load<TextAsset>(fileName);
 
-        if (File.Exists(filePath))
+        if (jsonFile != null)
         {
             try
             {
-                string jsonData = File.ReadAllText(filePath);
+                string jsonData = jsonFile.text;
 
                 QuizData quizData = JsonUtility.FromJson<QuizData>(jsonData);
 
@@ -54,7 +68,7 @@ public class QuizDataManager : MonoBehaviour
                     EditorUtility.SetDirty(quizDataScriptableObject);
                     AssetDatabase.SaveAssets();
 
-                    Debug.Log("Data has been successfully deserialized and stored in the ScriptableObject.");
+                    Debug.Log($"Data has been successfully deserialized from {fileName} and stored in the ScriptableObject.");
                 }
                 else
                 {
@@ -68,20 +82,20 @@ public class QuizDataManager : MonoBehaviour
         }
         else
         {
-            Debug.LogError($"Could not find the JSON file at path: {filePath}");
+            Debug.LogError($"Could not find the JSON file with name: {fileName} in Resources.");
         }
     }
 
     void Start()
     {
-        if (quizDataScriptableObject != null && _uiController !=null)
+        if (quizDataScriptableObject != null && _uiController != null)
         {
             // Pass the deserialized data from the ScriptableObject to the UIController
-            _uiController.SetQuizData(new QuizData { questions = quizDataScriptableObject.questions });
+            _uiController.SetQuizData(new QuizData { questions = quizDataScriptableObject.questions }, _continentName);
         }
         else
         {
-            Debug.LogError("QuizDataScriptableObject is not assigned.");
+            Debug.LogError("QuizDataScriptableObject or UIController is not assigned.");
         }
     }
 }

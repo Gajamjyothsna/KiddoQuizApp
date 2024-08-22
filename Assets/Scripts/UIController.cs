@@ -45,6 +45,8 @@ public class UIController : MonoBehaviour
     [SerializeField] private Animator _correctAnswerAnimator;
     [SerializeField] private GameObject answerObject;
 
+    [SerializeField] private TextMeshProUGUI _continentNameTMP;
+
     private List<QuizDataManager.Question> _currentCategoryQuestions;
     private int _currentQuestionIndex = 0;
     private int _correctAnswersCount = 0; // Counter for correct answers
@@ -52,9 +54,10 @@ public class UIController : MonoBehaviour
     private int currentAttempt = 0; // Track the number of attempts for the current question
     private int userPoints = 0;
 
-    public void SetQuizData(QuizDataManager.QuizData data)
+    public void SetQuizData(QuizDataManager.QuizData data, string continent)
     {
         quizData = data;
+        _continentNameTMP.text = continent;
     }
 
     public void OnCategoryButtonClick(string category)
@@ -198,15 +201,7 @@ public class UIController : MonoBehaviour
             _options[selectedOptionIndex].GetComponent<Image>().color = WrongAnswerColor;
             _options[selectedOptionIndex].GetComponent<Image>().color = new Color(WrongAnswerColor.r, WrongAnswerColor.g, WrongAnswerColor.b, 1);
             _wrongAnswerPopUp.SetActive(true);
-            if(string.IsNullOrEmpty(currentQuestion.hint)) 
-            {
-                _wrongAnswerContentTMP.text = "You have attempted the wrong answer. Please read the question twice.";
-                _hintTMP.transform.parent.gameObject.SetActive(false);  
-            }
-            else
-            {
-                _hintTMP.text = "<b>Hint : </b>" + currentQuestion.hint;
-            }
+          
             // Optionally, provide feedback for the wrong answer
         }
     }

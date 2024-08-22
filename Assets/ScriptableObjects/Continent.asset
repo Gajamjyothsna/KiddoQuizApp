@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5157c6f6b4bbc9c458aae7178e85c004, type: 3}
-  m_Name: NorthAmerica
+  m_Name: Continent
   m_EditorClassIdentifier: 
   questions:
   - category: The Land
@@ -253,40 +253,76 @@ MonoBehaviour:
     answer: Panama Canal
     isAnswered: 0
   - category: The People
-    question: Which Mexican holiday is celebrated with parades and parties every
-      year on November 1st and 2nd?
+    question: Which Native American people lived in the Arctic region?
     options:
-    - Cinco de Mayo
-    - "D\xEDa de la Revoluci\xF3n"
-    - "D\xEDa de los Muertos"
-    - "D\xEDa de la Independencia"
-    answer: "D\xEDa de los Muertos"
+    - Aztec
+    - Inca
+    - Maya
+    - Inuit
+    answer: Inuit
     isAnswered: 0
   - category: The People
-    question: The language of the Inuit people of Canada is called what?
+    question: The ancient culture of the Maya developed in what is now the present-day
+      region of which three countries?
     options:
-    - Navajo
-    - Lakota
-    - Cree
-    - Inuktitut
-    answer: Inuktitut
+    - USA, Canada, Greenland
+    - Mexico, Belize, Guatemala
+    - Mexico, Panama, Nicaragua
+    - USA, Mexico, Guatemala
+    answer: Mexico, Belize, Guatemala
     isAnswered: 0
   - category: The People
-    question: The native peoples of the Great Plains lived in structures called what?
+    question: Which Native American civilization built the city of Machu Picchu?
     options:
-    - Wigwams
-    - Longhouses
-    - Tipis
-    - Hogans
-    answer: Tipis
+    - Aztec
+    - Inca
+    - Maya
+    - Olmec
+    answer: Inca
     isAnswered: 0
   - category: The People
-    question: 'This event is the largest in the United States and is a celebration
-      of New Orleans'' French heritage:'
+    question: "Which Native American civilization built the ancient city of Tenochtitl\xE1n?"
     options:
-    - Mardi Gras
-    - Thanksgiving Day
-    - Independence Day
-    - Christmas
-    answer: Mardi Gras
+    - Inca
+    - Olmec
+    - Aztec
+    - Maya
+    answer: Aztec
+    isAnswered: 0
+  - category: The People
+    question: This Native American civilization was known for creating a calendar
+      and pyramids. Who were they?
+    options:
+    - Inca
+    - Olmec
+    - Aztec
+    - Maya
+    answer: Maya
+    isAnswered: 0
+  - category: The People
+    question: Which U.S. state was originally called the Sandwich Islands?
+    options:
+    - Hawaii
+    - Alaska
+    - California
+    - Washington
+    answer: Hawaii
+    isAnswered: 0
+  - category: The People
+    question: Which country is known as the Land of the Rising Sun?
+    options:
+    - China
+    - India
+    - Japan
+    - South Korea
+    answer: Japan
+    isAnswered: 0
+  - category: The People
+    question: Which country is famous for inventing pasta and pizza?
+    options:
+    - France
+    - Italy
+    - Greece
+    - Mexico
+    answer: Italy
     isAnswered: 0

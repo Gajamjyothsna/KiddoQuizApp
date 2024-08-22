@@ -838,7 +838,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -50}
-  m_SizeDelta: {x: 300, y: 100}
+  m_SizeDelta: {x: 1000, y: 100}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &399175539
 MonoBehaviour:
@@ -1316,6 +1316,7 @@ MonoBehaviour:
   WrongAnswerColor: {r: 1, g: 0, b: 0, a: 1}
   _correctAnswerAnimator: {fileID: 1106175735}
   answerObject: {fileID: 1374533829}
+  _continentNameTMP: {fileID: 399175539}
 --- !u!1 &509912346
 GameObject:
   m_ObjectHideFlags: 0
@@ -1883,7 +1884,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _uiController: {fileID: 495972807}
-  quizDataScriptableObject: {fileID: 11400000, guid: 9620311b0d7d4e449a99db8ba352afa1, type: 2}
+  quizDataScriptableObject: {fileID: 11400000, guid: 10100148e8aa9364487947426159350f, type: 2}
+  jsonFileNames:
+  - Africa
+  - Antarctica
+  - Asia
+  - Australia
+  - Europe
+  - NorthAmerica
+  - SouthAmerica
+  selectedJsonIndex: 5
+  _continentName: NorthAmerica
 --- !u!1 &643027138
 GameObject:
   m_ObjectHideFlags: 0
