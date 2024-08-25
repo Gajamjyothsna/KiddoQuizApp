@@ -44,7 +44,9 @@ public class UIController : MonoBehaviour
 
     [SerializeField] private Animator _correctAnswerAnimator;
 
-    [SerializeField] private TextMeshProUGUI _continentNameTMP;
+    [SerializeField] private TextMeshProUGUI _continentMainNameTMP;
+    [SerializeField] private TextMeshProUGUI _continentQuestionPanelTMP;
+
 
     [Header("GoodJob PopUp UI")]
     [SerializeField] private GameObject _goodJobPopUp;
@@ -69,7 +71,8 @@ public class UIController : MonoBehaviour
     {
         quizData = data;
         _continentName = continent; 
-        _continentNameTMP.text = continent;
+        _continentMainNameTMP.text = continent;
+        _continentQuestionPanelTMP.text = continent;
     }
 
     public void OnCategoryButtonClick(string category)
