@@ -7,6 +7,27 @@ using System.Collections;
 
 public class UIController : MonoBehaviour
 {
+
+    #region BGs Data Model
+    [System.Serializable]
+    public class BGDataModel
+    {
+        public Sprite _continentBG;
+        public ContinentType _continentType;
+    }
+
+    [System.Serializable]
+    public enum ContinentType
+    {
+        Asia,
+        Antarctica,
+        Africa,
+        Australia,
+        Europe,
+        NorthAmerica,
+        SouthAmerica
+    }
+    #endregion
     [Header("Quiz Data Model Debugging")]
     public QuizDataManager.QuizData quizData;
 
@@ -57,6 +78,9 @@ public class UIController : MonoBehaviour
     [SerializeField] private GameObject _questionPanel;
     [SerializeField] private GameObject _optionPanel;
 
+    [Header("BG Sprite List")]
+    [SerializeField] private List<Image> _panelBGs;
+    [SerializeField] private List<BGDataModel> _bgDataModel;
 
     private List<QuizDataManager.Question> _currentCategoryQuestions;
     private int _currentQuestionIndex = 0;
@@ -73,8 +97,20 @@ public class UIController : MonoBehaviour
         _continentName = continent; 
         _continentMainNameTMP.text = continent;
         _continentQuestionPanelTMP.text = continent;
+
+        SetBGData(continent);
     }
 
+
+    private void SetBGData(string _continent)
+    {
+        int index = _bgDataModel.FindIndex(x=>x._continentType.ToString() == _continent);
+
+        for(int i=0;i<_panelBGs.Count;i++)
+        {
+            _panelBGs[i].sprite = _bgDataModel[index]._continentBG;
+        }
+    }
     public void OnCategoryButtonClick(string category)
     {
         DisplayQuestionsByCategory(category);
