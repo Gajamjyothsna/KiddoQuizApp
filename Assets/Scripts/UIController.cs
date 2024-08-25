@@ -51,6 +51,7 @@ public class UIController : MonoBehaviour
     [SerializeField] private GameObject _optionPanel;
     [SerializeField] private GameObject answerObject;
 
+
     private List<QuizDataManager.Question> _currentCategoryQuestions;
     private int _currentQuestionIndex = 0;
     private int _correctAnswersCount = 0; // Counter for correct answers
@@ -112,7 +113,6 @@ public class UIController : MonoBehaviour
             currentAttempt = 0;
             ResetStars();
             ResetOptionsColors();
-            ResetAnswerOption();
            // ResetPostion();
 
             for (int i = 0; i < _options.Length; i++)
@@ -146,7 +146,6 @@ public class UIController : MonoBehaviour
 
         if (currentQuestion.options[selectedOptionIndex] == currentQuestion.answer)
         {
-            _correctAnswerAnimator.SetTrigger("Correct");
 
             Debug.Log("Correct answer!");
 
@@ -184,9 +183,12 @@ public class UIController : MonoBehaviour
 
                 IEnumerator DelayTheNextQuestion()
                 {
-                    answerObject.SetActive(true);
+                    // answerObject.SetActive(true);
+                    _correctAnswerAnimator.SetBool("Correct", true);
+
                     yield return new WaitForSeconds(2f);
-                 //   LeanTween.moveLocalX(_questionPanel, 0f, 1f).setEase(LeanTweenType.easeInElastic);
+                    //   LeanTween.moveLocalX(_questionPanel, 0f, 1f).setEase(LeanTweenType.easeInElastic);
+                    _correctAnswerAnimator.SetBool("Correct", false);
                     DisplayCurrentQuestion();
                 }
             }
