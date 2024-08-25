@@ -196,7 +196,7 @@ public class UIController : MonoBehaviour
                     _GoodJobRankTMP.text = " + " + pointsAwarded.ToString();
                     _goodJobPopUp.SetActive(true);
                     _correctAnswerAnimator.SetBool("Correct", false);
-                    yield return new WaitForSeconds(1f);
+                    yield return new WaitForSeconds(2.5f);
                     _goodJobPopUp.SetActive(false);
                     DisplayCurrentQuestion();
                 }
