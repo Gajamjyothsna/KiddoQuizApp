@@ -14,315 +14,825 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questions:
   - category: The Land
-    question: Which is the driest place on the North American continent?
+    question: What is the highest mountain in the world?
     options:
-    - Death Valley
-    - Sonoran Desert
-    - Mojave Desert
-    - Great Basin Desert
-    answer: Death Valley
+    - Mount Everest
+    - Mount Kilimanjaro
+    - Mount Fuji
+    - Mount McKinley
+    answer: Mount Everest
     isAnswered: 0
   - category: The Land
-    question: What is the name of the longest mountain range of North America?
+    question: Which desert is the largest in Asia?
+    options:
+    - Sahara Desert
+    - Gobi Desert
+    - Atacama Desert
+    - Kalahari Desert
+    answer: Gobi Desert
+    isAnswered: 0
+  - category: The Land
+    question: Which is the longest river in Asia?
+    options:
+    - Amazon River
+    - Nile River
+    - Yangtze River
+    - Mississippi River
+    answer: Yangtze River
+    isAnswered: 0
+  - category: The Land
+    question: What large animal is known for its strength and lives in the jungles
+      of Asia?
+    options:
+    - Lion
+    - Elephant
+    - Tiger
+    - Bear
+    answer: Tiger
+    isAnswered: 0
+  - category: The Land
+    question: Which country in Asia is known for having pandas?
+    options:
+    - India
+    - China
+    - Japan
+    - Thailand
+    answer: China
+    isAnswered: 0
+  - category: The Land
+    question: Which large island country is located in Southeast Asia and is known
+      for its unique animals?
+    options:
+    - Japan
+    - Madagascar
+    - Indonesia
+    - Philippines
+    answer: Indonesia
+    isAnswered: 0
+  - category: The Land
+    question: What is the name of the largest lake in Asia?
+    options:
+    - Lake Superior
+    - Caspian Sea
+    - Lake Victoria
+    - Lake Baikal
+    answer: Caspian Sea
+    isAnswered: 0
+  - category: The Land
+    question: Which mountain range separates Asia from Europe?
     options:
     - Andes Mountains
-    - Appalachian Mountains
+    - Alps
+    - Ural Mountains
     - Rocky Mountains
-    - Canadian Shield
-    answer: Rocky Mountains
+    answer: Ural Mountains
     isAnswered: 0
   - category: The Land
-    question: Which ocean borders North America in the east?
+    question: Which Asian country is made up of thousands of islands?
     options:
-    - Atlantic Ocean
-    - Gulf of Mexico
+    - India
+    - Japan
+    - China
+    - Russia
+    answer: Japan
+    isAnswered: 0
+  - category: The Land
+    question: What is the name of the famous wall in China?
+    options:
+    - Berlin Wall
+    - Great Wall of China
+    - Wall of India
+    - Hadrian's Wall
+    answer: Great Wall of China
+    isAnswered: 0
+  - category: The Land
+    question: Which Asian animal is known for its long trunk and big ears?
+    options:
+    - Tiger
+    - Elephant
+    - Lion
+    - Giraffe
+    answer: Elephant
+    isAnswered: 0
+  - category: The Land
+    question: Which ocean is to the south of Asia?
+    options:
     - Pacific Ocean
-    - Antarctic Ocean
-    answer: Atlantic Ocean
+    - Indian Ocean
+    - Atlantic Ocean
+    - Arctic Ocean
+    answer: Indian Ocean
     isAnswered: 0
   - category: The Land
-    question: What is the highest point in North America?
+    question: Which country in Asia is known as the 'Land of the Rising Sun'?
     options:
-    - Mount Hayes
-    - Mount Logan
-    - Mount Helen
-    - Mount McKinley
-    answer: Mount McKinley
+    - China
+    - Japan
+    - India
+    - Thailand
+    answer: Japan
     isAnswered: 0
   - category: The Land
-    question: Which is the largest lake in North America?
+    question: Which large cat is found in the snowy mountains of Asia?
     options:
-    - Lake Michigan
-    - Lake Ontario
-    - Lake Superior
-    - Great Salt Lake
-    answer: Lake Superior
+    - Lion
+    - Leopard
+    - Snow Leopard
+    - Tiger
+    answer: Snow Leopard
     isAnswered: 0
   - category: The Land
-    question: Which is the national animal of the USA?
+    question: Which Asian river is known as the 'Mother River of China'?
     options:
-    - Moose
-    - American Bison
-    - Reindeer
-    - Polar Bear
-    answer: American Bison
+    - Ganges River
+    - Yangtze River
+    - Mekong River
+    - Yellow River
+    answer: Yellow River
     isAnswered: 0
   - category: The Land
-    question: What is the collective name for the string of islands at the southern
-      tip of Florida?
+    question: Which Asian country is famous for its beautiful cherry blossoms?
     options:
-    - Caribbean Islands
-    - Aleutian Islands
-    - Florida Keys
-    - Greater Antilles
-    answer: Florida Keys
+    - China
+    - Japan
+    - Korea
+    - India
+    answer: Japan
     isAnswered: 0
   - category: The Land
-    question: In which U.S. state is the Everglades National Park?
+    question: Which Asian country has the most people?
     options:
-    - Hawaii
-    - Florida
-    - Oregon
-    - California
-    answer: Florida
+    - India
+    - China
+    - Russia
+    - Japan
+    answer: China
     isAnswered: 0
   - category: The Land
-    question: True or false? Grizzly bears are fast runners.
+    question: Which large Asian bird is known for its beautiful feathers and fan-shaped
+      tail?
     options:
-    - TRUE
-    - FALSE
-    answer: TRUE
+    - Peacock
+    - Parrot
+    - Flamingo
+    - Penguin
+    answer: Peacock
     isAnswered: 0
   - category: The Land
-    question: Which animal would you expect to see in the grassland biome?
+    question: Which large cat, known for its white fur with black stripes, lives
+      in Asia?
     options:
-    - American Bison
-    - Elk
-    - Moose
-    - Lynx
-    answer: American Bison
+    - Lion
+    - Snow Leopard
+    - Bengal Tiger
+    - Siberian Tiger
+    answer: Siberian Tiger
     isAnswered: 0
   - category: The Land
-    question: What is the national bird of the United States?
-    options:
-    - Peregrine Falcon
-    - Bald Eagle
-    - Wild Turkey
-    - Great Horned Owl
-    answer: Bald Eagle
-    isAnswered: 0
-  - category: The Land
-    question: Which of these bear species is unique to North America?
-    options:
-    - Polar Bears
-    - Sun Bears
-    - Sloth Bears
-    - Grizzly Bears
-    answer: Grizzly Bears
-    isAnswered: 0
-  - category: The Land
-    question: The American pika is a small mammal that lives where?
-    options:
-    - Lake Superior
-    - Rocky Mountains
-    - Appalachian Mountains
-    - Great Salt Lake
-    answer: Rocky Mountains
-    isAnswered: 0
-  - category: The Land
-    question: Which river flows through the Grand Canyon?
-    options:
-    - Colorado River
-    - Columbia River
-    - Mississippi River
-    - Rio Grande
-    answer: Colorado River
-    isAnswered: 0
-  - category: The Land
-    question: This famous waterfall located on the borders of USA and Canada is popularly
-      known as?
-    options:
-    - Victoria Falls
-    - Niagara Falls
-    - Yosemite Falls
-    - Multnomah Falls
-    answer: Niagara Falls
-    isAnswered: 0
-  - category: The Land
-    question: The geographical feature is a broad region of Precambrian rock that
-      encircles Hudson Bay. What is this feature known as?
-    options:
-    - Rocky Mountains
-    - Great Plains
-    - Canadian Shield
-    - Appalachian Mountains
-    answer: Canadian Shield
-    isAnswered: 0
-  - category: The People
-    question: On which day do U.S. Americans celebrate Independence Day?
-    options:
-    - 4th of July
-    - 15th of August
-    - 20th of February
-    - 25th of December
-    answer: 4th of July
-    isAnswered: 0
-  - category: The People
-    question: How many stars appear on the flag of the United States?
-    options:
-    - 52
-    - 48
-    - 50
-    - 46
-    answer: 50
-    isAnswered: 0
-  - category: The People
-    question: The ruins of the ancient Mayan city of Palenque are found in which
-      country?
-    options:
-    - Mexico
-    - Belize
-    - Guatemala
-    - Panama
-    answer: Mexico
-    isAnswered: 0
-  - category: The People
-    question: The best-preserved mummies in North America can be viewed in which
-      city?
-    options:
-    - Ottawa, Canada
-    - Nuuk, Greenland
-    - New York City, United States
-    - Vancouver, Canada
-    answer: Nuuk, Greenland
-    isAnswered: 0
-  - category: The People
-    question: Although a part of North America, Greenland is a territory of which
-      country?
-    options:
-    - Iceland
-    - United States of America
-    - Denmark
-    - United Kingdom
-    answer: Denmark
-    isAnswered: 0
-  - category: The People
-    question: In which city would you find the Statue of Liberty?
-    options:
-    - Philadelphia
-    - New York City
-    - Washington D.C.
-    - San Francisco
-    answer: New York City
-    isAnswered: 0
-  - category: The People
-    question: Which is the largest city in North America?
-    options:
-    - New York City
-    - Toronto
-    - Mexico City
-    - San Francisco
-    answer: Mexico City
-    isAnswered: 0
-  - category: The People
-    question: How many countries are there in Central America?
-    options:
-    - 6
-    - 7
-    - 8
-    - 9
-    answer: 7
-    isAnswered: 0
-  - category: The People
-    question: Which language is the most commonly spoken in Central America?
-    options:
-    - Creole
-    - Portuguese
-    - Spanish
-    - Miskito
-    answer: Spanish
-    isAnswered: 0
-  - category: The People
-    question: 'The waterway in Panama that connects the Atlantic Ocean with the Pacific
-      Ocean is known as:'
-    options:
-    - Champlain Canal
-    - Florida Canal
-    - Panama Canal
-    - Orleans Canal
-    answer: Panama Canal
-    isAnswered: 0
-  - category: The People
-    question: Which Native American people lived in the Arctic region?
-    options:
-    - Aztec
-    - Inca
-    - Maya
-    - Inuit
-    answer: Inuit
-    isAnswered: 0
-  - category: The People
-    question: The ancient culture of the Maya developed in what is now the present-day
-      region of which three countries?
-    options:
-    - USA, Canada, Greenland
-    - Mexico, Belize, Guatemala
-    - Mexico, Panama, Nicaragua
-    - USA, Mexico, Guatemala
-    answer: Mexico, Belize, Guatemala
-    isAnswered: 0
-  - category: The People
-    question: Which Native American civilization built the city of Machu Picchu?
-    options:
-    - Aztec
-    - Inca
-    - Maya
-    - Olmec
-    answer: Inca
-    isAnswered: 0
-  - category: The People
-    question: "Which Native American civilization built the ancient city of Tenochtitl\xE1n?"
-    options:
-    - Inca
-    - Olmec
-    - Aztec
-    - Maya
-    answer: Aztec
-    isAnswered: 0
-  - category: The People
-    question: This Native American civilization was known for creating a calendar
-      and pyramids. Who were they?
-    options:
-    - Inca
-    - Olmec
-    - Aztec
-    - Maya
-    answer: Maya
-    isAnswered: 0
-  - category: The People
-    question: Which U.S. state was originally called the Sandwich Islands?
-    options:
-    - Hawaii
-    - Alaska
-    - California
-    - Washington
-    answer: Hawaii
-    isAnswered: 0
-  - category: The People
-    question: Which country is known as the Land of the Rising Sun?
+    question: Which Asian island country is known for its volcanoes?
     options:
     - China
     - India
     - Japan
-    - South Korea
+    - Thailand
+    answer: Japan
+    isAnswered: 0
+  - category: The Land
+    question: What is the largest desert in the Middle East?
+    options:
+    - Sahara Desert
+    - Gobi Desert
+    - Arabian Desert
+    - Kalahari Desert
+    answer: Arabian Desert
+    isAnswered: 0
+  - category: The Land
+    question: Which sea lies between Saudi Arabia and Africa?
+    options:
+    - Red Sea
+    - Black Sea
+    - Caspian Sea
+    - Mediterranean Sea
+    answer: Red Sea
+    isAnswered: 0
+  - category: The Land
+    question: Which country in Asia has the most mountains?
+    options:
+    - India
+    - Nepal
+    - China
+    - Japan
+    answer: Nepal
+    isAnswered: 0
+  - category: The Land
+    question: Which Asian animal is known for its long arms and swinging from trees?
+    options:
+    - Elephant
+    - Tiger
+    - Gibbon
+    - Panda
+    answer: Gibbon
+    isAnswered: 0
+  - category: The Land
+    question: Which Asian country is famous for the Taj Mahal?
+    options:
+    - Japan
+    - China
+    - India
+    - Thailand
+    answer: India
+    isAnswered: 0
+  - category: The Land
+    question: Which Asian country is the largest by area?
+    options:
+    - India
+    - China
+    - Russia
+    - Japan
+    answer: Russia
+    isAnswered: 0
+  - category: The Land
+    question: Which large island is part of both Asia and Australia?
+    options:
+    - Borneo
+    - New Guinea
+    - Madagascar
+    - Iceland
+    answer: New Guinea
+    isAnswered: 0
+  - category: The Land
+    question: Which Asian country has many active volcanoes, like Mount Fuji?
+    options:
+    - Japan
+    - India
+    - Thailand
+    - China
+    answer: Japan
+    isAnswered: 0
+  - category: The Land
+    question: Which Asian animal is famous for its black and white fur?
+    options:
+    - Panda
+    - Tiger
+    - Lion
+    - Elephant
+    answer: Panda
+    isAnswered: 0
+  - category: The Land
+    question: Which sea lies to the east of the Philippines?
+    options:
+    - Indian Ocean
+    - South China Sea
+    - Sea of Japan
+    - Pacific Ocean
+    answer: Pacific Ocean
+    isAnswered: 0
+  - category: The People
+    question: What is the capital of China?
+    options:
+    - Tokyo
+    - Beijing
+    - Seoul
+    - Bangkok
+    answer: Beijing
+    isAnswered: 0
+  - category: The People
+    question: Which Asian country is famous for its martial arts like karate?
+    options:
+    - India
+    - China
+    - Japan
+    - Thailand
     answer: Japan
     isAnswered: 0
   - category: The People
-    question: Which country is famous for inventing pasta and pizza?
+    question: Which country in Asia is known for the Great Wall?
     options:
-    - France
-    - Italy
-    - Greece
-    - Mexico
-    answer: Italy
+    - India
+    - China
+    - Japan
+    - Korea
+    answer: China
+    isAnswered: 0
+  - category: The People
+    question: What is the main language spoken in India?
+    options:
+    - Hindi
+    - Chinese
+    - Japanese
+    - English
+    answer: Hindi
+    isAnswered: 0
+  - category: The People
+    question: Which Asian country is known for its beautiful silk?
+    options:
+    - India
+    - China
+    - Japan
+    - Thailand
+    answer: China
+    isAnswered: 0
+  - category: The People
+    question: Which Asian country is known for its traditional clothing called kimono?
+    options:
+    - India
+    - China
+    - Japan
+    - Thailand
+    answer: Japan
+    isAnswered: 0
+  - category: The People
+    question: Which country in Asia is known for the Taj Mahal?
+    options:
+    - Japan
+    - China
+    - India
+    - Thailand
+    answer: India
+    isAnswered: 0
+  - category: The People
+    question: Which Asian country has the largest population in the world?
+    options:
+    - China
+    - India
+    - Russia
+    - Japan
+    answer: China
+    isAnswered: 0
+  - category: The People
+    question: What is the capital of Japan?
+    options:
+    - Tokyo
+    - Beijing
+    - Seoul
+    - Bangkok
+    answer: Tokyo
+    isAnswered: 0
+  - category: The People
+    question: Which Asian country is known for its festivals of lights called Diwali?
+    options:
+    - Japan
+    - China
+    - India
+    - Thailand
+    answer: India
+    isAnswered: 0
+  - category: The People
+    question: Which country in Asia is famous for its tea?
+    options:
+    - China
+    - India
+    - Japan
+    - Thailand
+    answer: China
+    isAnswered: 0
+  - category: The People
+    question: Which Asian country is known for the Terracotta Army?
+    options:
+    - India
+    - China
+    - Japan
+    - Korea
+    answer: China
+    isAnswered: 0
+  - category: The People
+    question: Which country in Asia is known for its spicy food and curries?
+    options:
+    - Japan
+    - China
+    - India
+    - Thailand
+    answer: India
+    isAnswered: 0
+  - category: The People
+    question: Which country in Asia is famous for the ancient temples of Angkor Wat?
+    options:
+    - India
+    - China
+    - Cambodia
+    - Thailand
+    answer: Cambodia
+    isAnswered: 0
+  - category: The People
+    question: Which Asian country is known for the ancient art of calligraphy?
+    options:
+    - Japan
+    - China
+    - India
+    - Thailand
+    answer: China
+    isAnswered: 0
+  - category: The People
+    question: Which Asian country has a tradition of wearing hanbok?
+    options:
+    - Japan
+    - China
+    - Korea
+    - Thailand
+    answer: Korea
+    isAnswered: 0
+  - category: The People
+    question: Which country in Asia is famous for the festival of cherry blossoms
+      called Hanami?
+    options:
+    - Japan
+    - China
+    - India
+    - Thailand
+    answer: Japan
+    isAnswered: 0
+  - category: The People
+    question: Which Asian country is known for Mount Everest?
+    options:
+    - Japan
+    - China
+    - Nepal
+    - India
+    answer: Nepal
+    isAnswered: 0
+  - category: The People
+    question: Which Asian country is famous for its dance called ballet?
+    options:
+    - Japan
+    - China
+    - Russia
+    - India
+    answer: Russia
+    isAnswered: 0
+  - category: The People
+    question: Which country in Asia is known for its traditional houses called yurts?
+    options:
+    - Mongolia
+    - China
+    - India
+    - Japan
+    answer: Mongolia
+    isAnswered: 0
+  - category: The People
+    question: Which Asian country celebrates the Lunar New Year with dragon dances?
+    options:
+    - Japan
+    - China
+    - India
+    - Thailand
+    answer: China
+    isAnswered: 0
+  - category: The People
+    question: Which Asian country is known for the city of Dubai?
+    options:
+    - India
+    - China
+    - United Arab Emirates
+    - Japan
+    answer: United Arab Emirates
+    isAnswered: 0
+  - category: The People
+    question: Which country in Asia is famous for its island city called Singapore?
+    options:
+    - Japan
+    - China
+    - Singapore
+    - India
+    answer: Singapore
+    isAnswered: 0
+  - category: The People
+    question: Which Asian country is famous for its temples and shrines?
+    options:
+    - India
+    - China
+    - Japan
+    - Thailand
+    answer: Japan
+    isAnswered: 0
+  - category: The People
+    question: Which Asian country has the city of Bangkok as its capital?
+    options:
+    - Japan
+    - China
+    - Thailand
+    - India
+    answer: Thailand
+    isAnswered: 0
+  - category: The People
+    question: Which Asian country is known for the Great Wall, one of the wonders
+      of the world?
+    options:
+    - Japan
+    - China
+    - India
+    - Thailand
+    answer: China
+    isAnswered: 0
+  - category: The People
+    question: Which Asian country is known for Bollywood, a famous film industry?
+    options:
+    - Japan
+    - China
+    - India
+    - Thailand
+    answer: India
+    isAnswered: 0
+  - category: The People
+    question: Which Asian country is known for its traditional dances like Kathak
+      and Bharatanatyam?
+    options:
+    - Japan
+    - China
+    - India
+    - Thailand
+    answer: India
+    isAnswered: 0
+  - category: The People
+    question: Which Asian country is famous for its noodle dishes like ramen?
+    options:
+    - Japan
+    - China
+    - India
+    - Thailand
+    answer: Japan
+    isAnswered: 0
+  - category: The People
+    question: Which Asian country is known for its traditional medicine practices
+      like acupuncture?
+    options:
+    - Japan
+    - China
+    - India
+    - Thailand
+    answer: China
+    isAnswered: 0
+  - category: The Economy
+    question: Which Asian country is the largest producer of rice?
+    options:
+    - India
+    - China
+    - Japan
+    - Thailand
+    answer: China
+    isAnswered: 0
+  - category: The Economy
+    question: Which Asian country is known for its high-tech industry and electronics?
+    options:
+    - Japan
+    - China
+    - India
+    - Thailand
+    answer: Japan
+    isAnswered: 0
+  - category: The Economy
+    question: Which Asian country is the largest producer of tea?
+    options:
+    - Japan
+    - China
+    - India
+    - Thailand
+    answer: China
+    isAnswered: 0
+  - category: The Economy
+    question: Which Asian country is famous for producing silk?
+    options:
+    - Japan
+    - China
+    - India
+    - Thailand
+    answer: China
+    isAnswered: 0
+  - category: The Economy
+    question: Which Asian country is known for its oil production in the Middle East?
+    options:
+    - Japan
+    - China
+    - India
+    - Saudi Arabia
+    answer: Saudi Arabia
+    isAnswered: 0
+  - category: The Economy
+    question: Which Asian country is famous for its cars like Toyota and Honda?
+    options:
+    - Japan
+    - China
+    - India
+    - Thailand
+    answer: Japan
+    isAnswered: 0
+  - category: The Economy
+    question: Which Asian country is known for its spices and curry?
+    options:
+    - Japan
+    - China
+    - India
+    - Thailand
+    answer: India
+    isAnswered: 0
+  - category: The Economy
+    question: Which Asian country is the largest producer of cotton?
+    options:
+    - Japan
+    - China
+    - India
+    - Thailand
+    answer: India
+    isAnswered: 0
+  - category: The Economy
+    question: Which Asian country is known for its electronics and smartphones?
+    options:
+    - Japan
+    - China
+    - Korea
+    - Thailand
+    answer: Korea
+    isAnswered: 0
+  - category: The Economy
+    question: Which Asian country is famous for producing pearls?
+    options:
+    - Japan
+    - China
+    - India
+    - Thailand
+    answer: Japan
+    isAnswered: 0
+  - category: The Economy
+    question: Which Asian country is known for its technology companies like Samsung?
+    options:
+    - Japan
+    - China
+    - Korea
+    - India
+    answer: Korea
+    isAnswered: 0
+  - category: The Economy
+    question: Which Asian country is famous for its textiles and garments?
+    options:
+    - Japan
+    - China
+    - India
+    - Bangladesh
+    answer: Bangladesh
+    isAnswered: 0
+  - category: The Economy
+    question: Which Asian country is the largest producer of palm oil?
+    options:
+    - Japan
+    - China
+    - Indonesia
+    - Thailand
+    answer: Indonesia
+    isAnswered: 0
+  - category: The Economy
+    question: Which Asian country is famous for its film industry called Bollywood?
+    options:
+    - Japan
+    - China
+    - India
+    - Thailand
+    answer: India
+    isAnswered: 0
+  - category: The Economy
+    question: Which Asian country is known for its jewelry and precious stones?
+    options:
+    - Japan
+    - China
+    - India
+    - Thailand
+    answer: India
+    isAnswered: 0
+  - category: The Economy
+    question: Which Asian country is famous for its shipbuilding industry?
+    options:
+    - Japan
+    - China
+    - Korea
+    - India
+    answer: Korea
+    isAnswered: 0
+  - category: The Economy
+    question: Which Asian country is the largest producer of mangoes?
+    options:
+    - Japan
+    - China
+    - India
+    - Thailand
+    answer: India
+    isAnswered: 0
+  - category: The Economy
+    question: Which Asian country is famous for its carpets and rugs?
+    options:
+    - Japan
+    - China
+    - India
+    - Iran
+    answer: Iran
+    isAnswered: 0
+  - category: The Economy
+    question: Which Asian country is the largest producer of coconuts?
+    options:
+    - Japan
+    - China
+    - Indonesia
+    - Thailand
+    answer: Indonesia
+    isAnswered: 0
+  - category: The Economy
+    question: Which Asian country is known for its leather products?
+    options:
+    - Japan
+    - China
+    - India
+    - Thailand
+    answer: India
+    isAnswered: 0
+  - category: The Economy
+    question: Which Asian country is famous for its gold jewelry?
+    options:
+    - Japan
+    - China
+    - India
+    - Thailand
+    answer: India
+    isAnswered: 0
+  - category: The Economy
+    question: Which Asian country is known for producing high-quality rice?
+    options:
+    - Japan
+    - China
+    - Thailand
+    - India
+    answer: Thailand
+    isAnswered: 0
+  - category: The Economy
+    question: Which Asian country is famous for its gemstones, especially rubies
+      and sapphires?
+    options:
+    - Japan
+    - China
+    - India
+    - Sri Lanka
+    answer: Sri Lanka
+    isAnswered: 0
+  - category: The Economy
+    question: Which Asian country is known for its tea plantations in Darjeeling
+      and Assam?
+    options:
+    - Japan
+    - China
+    - India
+    - Thailand
+    answer: India
+    isAnswered: 0
+  - category: The Economy
+    question: Which Asian country is the largest producer of jute?
+    options:
+    - Japan
+    - China
+    - India
+    - Bangladesh
+    answer: Bangladesh
+    isAnswered: 0
+  - category: The Economy
+    question: Which Asian country is known for its tourism industry, especially in
+      Bali?
+    options:
+    - Japan
+    - China
+    - Indonesia
+    - Thailand
+    answer: Indonesia
+    isAnswered: 0
+  - category: The Economy
+    question: Which Asian country is famous for its automobiles, especially in brands
+      like Hyundai and Kia?
+    options:
+    - Japan
+    - China
+    - Korea
+    - Thailand
+    answer: Korea
+    isAnswered: 0
+  - category: The Economy
+    question: Which Asian country is known for its rubber production?
+    options:
+    - Japan
+    - China
+    - Thailand
+    - India
+    answer: Thailand
+    isAnswered: 0
+  - category: The Economy
+    question: Which Asian country is the largest exporter of seafood?
+    options:
+    - Japan
+    - China
+    - Thailand
+    - India
+    answer: China
+    isAnswered: 0
+  - category: The Economy
+    question: Which Asian country is known for its technology hub called Silicon
+      Valley of India?
+    options:
+    - Japan
+    - China
+    - Korea
+    - India
+    answer: India
     isAnswered: 0

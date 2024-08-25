@@ -43,9 +43,13 @@ public class UIController : MonoBehaviour
     [SerializeField] private Color WrongAnswerColor;
 
     [SerializeField] private Animator _correctAnswerAnimator;
-    [SerializeField] private GameObject answerObject;
 
     [SerializeField] private TextMeshProUGUI _continentNameTMP;
+
+    [Header("Animation Elements")]
+    [SerializeField] private GameObject _questionPanel;
+    [SerializeField] private GameObject _optionPanel;
+    [SerializeField] private GameObject answerObject;
 
     private List<QuizDataManager.Question> _currentCategoryQuestions;
     private int _currentQuestionIndex = 0;
@@ -109,6 +113,7 @@ public class UIController : MonoBehaviour
             ResetStars();
             ResetOptionsColors();
             ResetAnswerOption();
+           // ResetPostion();
 
             for (int i = 0; i < _options.Length; i++)
             {
@@ -141,6 +146,7 @@ public class UIController : MonoBehaviour
 
         if (currentQuestion.options[selectedOptionIndex] == currentQuestion.answer)
         {
+            _correctAnswerAnimator.SetTrigger("Correct");
 
             Debug.Log("Correct answer!");
 
@@ -178,9 +184,9 @@ public class UIController : MonoBehaviour
 
                 IEnumerator DelayTheNextQuestion()
                 {
-                    _correctAnswerAnimator.SetTrigger("Correct");
                     answerObject.SetActive(true);
                     yield return new WaitForSeconds(2f);
+                 //   LeanTween.moveLocalX(_questionPanel, 0f, 1f).setEase(LeanTweenType.easeInElastic);
                     DisplayCurrentQuestion();
                 }
             }
@@ -241,10 +247,18 @@ public class UIController : MonoBehaviour
         {
             option.GetComponent<Image>().color = new Color(255, 255, 255, 0);
         }
+
+       
     }
 
     private void ResetAnswerOption()
     {
         answerObject.SetActive(false);
+    }
+
+   private void ResetPostion()
+    {
+        Debug.Log("ResetPostion");
+       
     }
 }
