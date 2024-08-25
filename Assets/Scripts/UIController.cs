@@ -46,10 +46,14 @@ public class UIController : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI _continentNameTMP;
 
+    [Header("GoodJob PopUp UI")]
+    [SerializeField] private GameObject _goodJobPopUp;
+    [SerializeField] private TextMeshProUGUI _GoodJobContinentTMP;
+    [SerializeField] private TextMeshProUGUI _GoodJobRankTMP;
+
     [Header("Animation Elements")]
     [SerializeField] private GameObject _questionPanel;
     [SerializeField] private GameObject _optionPanel;
-    [SerializeField] private GameObject answerObject;
 
 
     private List<QuizDataManager.Question> _currentCategoryQuestions;
@@ -59,9 +63,12 @@ public class UIController : MonoBehaviour
     private int currentAttempt = 0; // Track the number of attempts for the current question
     private int userPoints = 0;
 
+    private string _continentName;
+
     public void SetQuizData(QuizDataManager.QuizData data, string continent)
     {
         quizData = data;
+        _continentName = continent; 
         _continentNameTMP.text = continent;
     }
 
@@ -183,12 +190,14 @@ public class UIController : MonoBehaviour
 
                 IEnumerator DelayTheNextQuestion()
                 {
-                    // answerObject.SetActive(true);
                     _correctAnswerAnimator.SetBool("Correct", true);
-
                     yield return new WaitForSeconds(2f);
-                    //   LeanTween.moveLocalX(_questionPanel, 0f, 1f).setEase(LeanTweenType.easeInElastic);
+                    _GoodJobContinentTMP.text = _continentName;
+                    _GoodJobRankTMP.text = " + " + pointsAwarded.ToString();
+                    _goodJobPopUp.SetActive(true);
                     _correctAnswerAnimator.SetBool("Correct", false);
+                    yield return new WaitForSeconds(1f);
+                    _goodJobPopUp.SetActive(false);
                     DisplayCurrentQuestion();
                 }
             }
@@ -251,11 +260,6 @@ public class UIController : MonoBehaviour
         }
 
        
-    }
-
-    private void ResetAnswerOption()
-    {
-        answerObject.SetActive(false);
     }
 
    private void ResetPostion()
