@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
 using System.Collections;
+using UnityEngine.Networking;
+using static System.Net.WebRequestMethods;
+using UnityEditor.Analytics;
 
 public class UIController : MonoBehaviour
 {
@@ -73,6 +76,10 @@ public class UIController : MonoBehaviour
     [SerializeField] private GameObject _goodJobPopUp;
     [SerializeField] private TextMeshProUGUI _GoodJobContinentTMP;
     [SerializeField] private TextMeshProUGUI _GoodJobRankTMP;
+
+    [Header("Answer UI")]
+    [SerializeField] private Image _answerImage;
+    [SerializeField] private Image _goodJobPanelAnswerImage;
 
     [Header("Animation Elements")]
     [SerializeField] private GameObject _questionPanel;
@@ -192,7 +199,9 @@ public class UIController : MonoBehaviour
 
         if (currentQuestion.options[selectedOptionIndex] == currentQuestion.answer)
         {
-
+            string imageUrl = "https://cdn2.thecatapi.com/images/ebv.jpg";
+            StartCoroutine(LoadImageFromURL(imageUrl, _answerImage));
+            StartCoroutine(LoadImageFromURL(imageUrl, _goodJobPanelAnswerImage));
             Debug.Log("Correct answer!");
 
             _options[selectedOptionIndex].GetComponent<Image>().color = CorrectAnswerColor;
@@ -306,4 +315,21 @@ public class UIController : MonoBehaviour
         Debug.Log("ResetPostion");
        
     }
+
+    IEnumerator LoadImageFromURL(string url, Image uiImage)
+    {
+        UnityWebRequest request = UnityWebRequestTexture.GetTexture(url);
+        yield return request.SendWebRequest();
+
+        if (request.result != UnityWebRequest.Result.Success)
+        {
+            Debug.LogError("Failed to load image: " + request.error);
+        }
+        else
+        {
+            Texture2D texture = ((DownloadHandlerTexture)request.downloadHandler).texture;
+            uiImage.sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
+        }
+    }
+
 }
