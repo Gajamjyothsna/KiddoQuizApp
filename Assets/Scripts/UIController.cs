@@ -5,8 +5,6 @@ using UnityEngine.UI;
 using System.Linq;
 using System.Collections;
 using UnityEngine.Networking;
-using static System.Net.WebRequestMethods;
-using UnityEditor.Analytics;
 
 public class UIController : MonoBehaviour
 {
@@ -72,7 +70,7 @@ public class UIController : MonoBehaviour
     [SerializeField] private Button[] _options;
 
     [Header("Score UI Component")]
-    [SerializeField] private TextMeshProUGUI _scoreTMP;
+    [SerializeField] private Text _scoreTMP;
     [SerializeField] private TextMeshProUGUI _pointsTMP;
 
     [Header("Question Number UI Component")]
@@ -206,7 +204,7 @@ public class UIController : MonoBehaviour
                 if (i < question.options.Count)
                 {
                     _options[i].gameObject.SetActive(true);
-                    _options[i].GetComponentInChildren<TextMeshProUGUI>().text = question.options[i];
+                    _options[i].GetComponentInChildren<Text>().text = question.options[i];
                     _options[i].onClick.RemoveAllListeners();  // Clear previous listeners
                     int optionIndex = i; // Capture the index for the current option
                     _options[i].onClick.AddListener(() => OnOptionSelected(optionIndex));
@@ -337,10 +335,8 @@ public class UIController : MonoBehaviour
     {
         foreach(var option in _options)
         {
-            option.GetComponent<Image>().color = new Color(255, 255, 255, 0);
+            option.GetComponent<Image>().color = new Color(255, 255, 255, 1);
         }
-
-       
     }
 
    private void ResetPostion()
