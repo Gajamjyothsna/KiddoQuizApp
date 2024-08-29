@@ -1598,20 +1598,78 @@ MonoBehaviour:
   - {fileID: 385135246}
   - {fileID: 1531364557}
   _bgDataModel:
-  - _continentBG: {fileID: 21300000, guid: 16d7db15cbbe8694d92104c001fc306a, type: 3}
+  - _continentBG: {fileID: 21300000, guid: 6350434c4a2158b48af8e5e0bce06643, type: 3}
     _continentType: 0
-  - _continentBG: {fileID: 21300000, guid: 2cab3c240beabf5478c1a3b7f271ac97, type: 3}
+  - _continentBG: {fileID: 21300000, guid: 92208ec230025504ebf5e428d7f8e17a, type: 3}
     _continentType: 1
-  - _continentBG: {fileID: 21300000, guid: 71ffecd0efac09348803b9d325857687, type: 3}
+  - _continentBG: {fileID: 21300000, guid: add8546b62555df43a1d7b45b95e4ea8, type: 3}
     _continentType: 2
-  - _continentBG: {fileID: 21300000, guid: 5d5c4393a2330d149b97af0c2d081e53, type: 3}
+  - _continentBG: {fileID: 21300000, guid: dc473245865f9a04d97f7aa6c99b77bb, type: 3}
     _continentType: 3
-  - _continentBG: {fileID: 21300000, guid: e7b1e16308cf04f4dae4a201c0c87a75, type: 3}
+  - _continentBG: {fileID: 21300000, guid: f3cd51df4de3c1544be2dcbcc5359e6d, type: 3}
     _continentType: 4
-  - _continentBG: {fileID: 21300000, guid: 49c9ef7ada3746e41bebe2e6763d3b73, type: 3}
+  - _continentBG: {fileID: 21300000, guid: 8e6464a2c0b1c054ca6116fa7d362001, type: 3}
     _continentType: 5
-  - _continentBG: {fileID: 21300000, guid: 2949fdbb2b29e3b48965a8b211c10f90, type: 3}
+  - _continentBG: {fileID: 21300000, guid: b93a7d97611cb754f9783a1ab1b0f847, type: 3}
     _continentType: 6
+  _headerImageClasses:
+  - continentType: 0
+    continentHeaderImageData:
+    - _continentCategory: 0
+      _headerImage: {fileID: 21300000, guid: 8969e7393e9b29a4985013f038c9688b, type: 3}
+    - _continentCategory: 1
+      _headerImage: {fileID: 21300000, guid: adfd5a833144df2409f8d9c889001da3, type: 3}
+    - _continentCategory: 2
+      _headerImage: {fileID: 21300000, guid: 9a0d2c5c46cd9074088e15694e1ebd70, type: 3}
+  - continentType: 1
+    continentHeaderImageData:
+    - _continentCategory: 0
+      _headerImage: {fileID: 21300000, guid: b10cc87efe8c40543ba4b08fb2dd404d, type: 3}
+    - _continentCategory: 1
+      _headerImage: {fileID: 21300000, guid: 1cc18fc0136484647893a43de925fc1b, type: 3}
+    - _continentCategory: 2
+      _headerImage: {fileID: 21300000, guid: 5ef15942ff462e844bf9e763b03ab904, type: 3}
+  - continentType: 2
+    continentHeaderImageData:
+    - _continentCategory: 0
+      _headerImage: {fileID: 21300000, guid: 1ca36c05d717da84a954e4fe1440fb32, type: 3}
+    - _continentCategory: 1
+      _headerImage: {fileID: 21300000, guid: 0108830656598c14fafa658f0258c7f1, type: 3}
+    - _continentCategory: 2
+      _headerImage: {fileID: 21300000, guid: d4ff5aac1a94df84fa1f5adeb2d1002a, type: 3}
+  - continentType: 3
+    continentHeaderImageData:
+    - _continentCategory: 0
+      _headerImage: {fileID: 21300000, guid: d79da4cb431d14c469042221c0f0617f, type: 3}
+    - _continentCategory: 1
+      _headerImage: {fileID: 21300000, guid: 8bdea8180695fd442aa011b4ff3cc430, type: 3}
+    - _continentCategory: 2
+      _headerImage: {fileID: 21300000, guid: 56003a30319fe9c4db22c6a9ca4ead21, type: 3}
+  - continentType: 4
+    continentHeaderImageData:
+    - _continentCategory: 0
+      _headerImage: {fileID: 21300000, guid: 226c2627bb5e92640960f527f57ad1ea, type: 3}
+    - _continentCategory: 1
+      _headerImage: {fileID: 21300000, guid: 12c78c49ecd2db649bbb2dd87b2c8807, type: 3}
+    - _continentCategory: 2
+      _headerImage: {fileID: 21300000, guid: 7e7ff31be494efe4f9808353b12ae424, type: 3}
+  - continentType: 5
+    continentHeaderImageData:
+    - _continentCategory: 0
+      _headerImage: {fileID: 21300000, guid: 4818b2333b5a2f54f865c0304ab140ce, type: 3}
+    - _continentCategory: 1
+      _headerImage: {fileID: 21300000, guid: a091ab578761ccf4fb9f12c798b1bad4, type: 3}
+    - _continentCategory: 2
+      _headerImage: {fileID: 21300000, guid: 67cd1ee6c9aa10840aae257ad2d1ce28, type: 3}
+  - continentType: 6
+    continentHeaderImageData:
+    - _continentCategory: 0
+      _headerImage: {fileID: 21300000, guid: 83a644e46366ddd4ba58541f5b7527be, type: 3}
+    - _continentCategory: 1
+      _headerImage: {fileID: 21300000, guid: 72bb4fdd37267404092e7daf2c25f6b0, type: 3}
+    - _continentCategory: 2
+      _headerImage: {fileID: 21300000, guid: 8263bb63483524f4595f337920241e55, type: 3}
+  _headerIM: {fileID: 640266664}
 --- !u!1 &509912346
 GameObject:
   m_ObjectHideFlags: 0
@@ -2188,8 +2246,8 @@ MonoBehaviour:
   - Europe
   - NorthAmerica
   - SouthAmerica
-  selectedJsonIndex: 2
-  _continentName: Asia
+  selectedJsonIndex: 5
+  _continentName: NorthAmerica
 --- !u!1 &576197384
 GameObject:
   m_ObjectHideFlags: 0
@@ -2249,6 +2307,81 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &640266662
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 640266663}
+  - component: {fileID: 640266665}
+  - component: {fileID: 640266664}
+  m_Layer: 5
+  m_Name: HeaderTitleIM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &640266663
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640266662}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 830736993}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &640266664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640266662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: adfd5a833144df2409f8d9c889001da3, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 125
+--- !u!222 &640266665
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640266662}
+  m_CullTransparentMesh: 1
 --- !u!1 &643027138
 GameObject:
   m_ObjectHideFlags: 0
@@ -3075,6 +3208,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 830736993}
+  - component: {fileID: 830736995}
   m_Layer: 5
   m_Name: ContinentTitle
   m_TagString: Untagged
@@ -3095,13 +3229,22 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1841910722}
+  - {fileID: 640266663}
   m_Father: {fileID: 1106175734}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -15}
-  m_SizeDelta: {x: 300, y: 100}
+  m_AnchoredPosition: {x: 0, y: -50}
+  m_SizeDelta: {x: 900, y: 100}
   m_Pivot: {x: 0.5, y: 1}
+--- !u!222 &830736995
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830736992}
+  m_CullTransparentMesh: 1
 --- !u!1 &853123367
 GameObject:
   m_ObjectHideFlags: 0
@@ -6002,7 +6145,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: The Economy
+          m_StringArgument: TheEconomy
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1751651669
@@ -6173,7 +6316,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: The People
+          m_StringArgument: ThePeople
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1841910721
@@ -6193,7 +6336,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1841910722
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6863,7 +7006,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: The Land
+          m_StringArgument: TheLand
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1998555666

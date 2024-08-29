@@ -30,6 +30,26 @@ public class UIController : MonoBehaviour
         NorthAmerica,
         SouthAmerica
     }
+    [System.Serializable]
+    public enum Category
+    {
+        TheLand,
+        TheEconomy,
+        ThePeople
+    }
+
+    [System.Serializable]
+    public class HeaderImageClass
+    {
+        public ContinentType continentType;
+        public List<ContinentCategoryHeaderImage> continentHeaderImageData;
+    }
+    [System.Serializable]
+    public class ContinentCategoryHeaderImage
+    {
+        public Category _continentCategory;
+        public Sprite _headerImage;
+    }
     #endregion
     [Header("Quiz Data Model Debugging")]
     public QuizDataManager.QuizData quizData;
@@ -89,6 +109,12 @@ public class UIController : MonoBehaviour
     [SerializeField] private List<Image> _panelBGs;
     [SerializeField] private List<BGDataModel> _bgDataModel;
 
+    [Header("Header Images List")]
+    [SerializeField] private List<HeaderImageClass> _headerImageClasses;
+
+    [Header("Header Image Reference")]
+    [SerializeField] private Image _headerIM;
+
     private List<QuizDataManager.Question> _currentCategoryQuestions;
     private int _currentQuestionIndex = 0;
     private int _correctAnswersCount = 0; // Counter for correct answers
@@ -106,8 +132,13 @@ public class UIController : MonoBehaviour
         _continentQuestionPanelTMP.text = continent;
 
         SetBGData(continent);
+
     }
 
+    private void SetQuizUI(string _category)
+    {
+      _headerIM.sprite =  _headerImageClasses.Find(x => x.continentType.ToString() == _continentName).continentHeaderImageData.Find(x=>x._continentCategory.ToString() == _category)._headerImage;
+    }
 
     private void SetBGData(string _continent)
     {
@@ -121,6 +152,8 @@ public class UIController : MonoBehaviour
     public void OnCategoryButtonClick(string category)
     {
         DisplayQuestionsByCategory(category);
+
+        SetQuizUI(category);
     }
 
     private void DisplayQuestionsByCategory(string category)
