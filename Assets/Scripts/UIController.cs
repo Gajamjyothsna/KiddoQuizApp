@@ -78,7 +78,7 @@ public class UIController : MonoBehaviour
 
     [Header("Star Images")]
     [SerializeField] private Image[] starImages;
-    [SerializeField] private Color starOriginalColor;
+    [SerializeField] private Color starFadedColor;
 
     [Header("Option ColorCodes")]
     [SerializeField] private Color CorrectAnswerColor;
@@ -292,7 +292,7 @@ public class UIController : MonoBehaviour
 
             if (currentAttempt <= starImages.Length)
             {
-                starImages[currentAttempt - 1].color = Color.white; // Change the color of the star to white
+                starImages[currentAttempt - 1].color = starFadedColor; // Change the color of the star to white
             }
             _options[selectedOptionIndex].GetComponent<Image>().color = WrongAnswerColor;
             _options[selectedOptionIndex].GetComponent<Image>().color = new Color(WrongAnswerColor.r, WrongAnswerColor.g, WrongAnswerColor.b, 1);
@@ -327,7 +327,7 @@ public class UIController : MonoBehaviour
     {
         foreach (var star in starImages)
         {
-            star.color = Color.yellow; // Reset all stars to yellow
+            star.color = Color.white; // Reset all stars to yellow
         }
     }
 
