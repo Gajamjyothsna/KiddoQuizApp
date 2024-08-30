@@ -66,7 +66,7 @@ public class UIController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _wrongAnswerContentTMP;
 
     [Header("Questions Panel UI Components")]
-    [SerializeField] private TextMeshProUGUI _questionTMP;
+    [SerializeField] private Text _questionTMP;
     [SerializeField] private Button[] _options;
 
     [Header("Score UI Component")]
@@ -74,7 +74,7 @@ public class UIController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _pointsTMP;
 
     [Header("Question Number UI Component")]
-    [SerializeField] private TextMeshProUGUI _questionNumberTMP;
+    [SerializeField] private Text _questionNumberTMP;
 
     [Header("Star Images")]
     [SerializeField] private Image[] starImages;
@@ -113,6 +113,10 @@ public class UIController : MonoBehaviour
     [Header("Header Image Reference")]
     [SerializeField] private Image _headerIM;
 
+    [Header("Question Progression Bar Images")]
+    [SerializeField] private Sprite[] _progressionBarSprites;
+    [SerializeField] private Image _progressionBarImage;
+
     private List<QuizDataManager.Question> _currentCategoryQuestions;
     private int _currentQuestionIndex = 0;
     private int _correctAnswersCount = 0; // Counter for correct answers
@@ -146,6 +150,8 @@ public class UIController : MonoBehaviour
         {
             _panelBGs[i].sprite = _bgDataModel[index]._continentBG;
         }
+
+       _progressionBarImage.sprite = _progressionBarSprites[_correctAnswersCount];
     }
     public void OnCategoryButtonClick(string category)
     {
@@ -191,10 +197,13 @@ public class UIController : MonoBehaviour
             var question = _currentCategoryQuestions[_currentQuestionIndex];
             _questionTMP.text = question.question;
 
-            _questionNumberTMP.text = "Question " + (_currentQuestionIndex + 1);
+            _questionNumberTMP.text = "QUESTION " + (_currentQuestionIndex + 1);
 
             // Reset attempts for the new question
             currentAttempt = 0;
+
+            _progressionBarImage.sprite = _progressionBarSprites[currentAttempt];
+
             ResetStars();
             ResetOptionsColors();
            // ResetPostion();
@@ -228,6 +237,8 @@ public class UIController : MonoBehaviour
 
         currentAttempt++; // Increment the attempt count
 
+
+
         if (currentQuestion.options[selectedOptionIndex] == currentQuestion.answer)
         {
             string imageUrl = "https://cdn2.thecatapi.com/images/ebv.jpg";
@@ -250,11 +261,16 @@ public class UIController : MonoBehaviour
             // Increment correct answer count
             _correctAnswersCount++;
 
+            _progressionBarImage.sprite = _progressionBarSprites[_correctAnswersCount];
+
             // Check if 10 correct answers have been given
-            if (_correctAnswersCount >= 10)
+            if (_correctAnswersCount > 10)
             {
                 ShowCongratulationsPopup();
                 _correctAnswersCount = 0; // Reset the count if you want to allow showing the popup again after another 10 correct answers
+
+                _progressionBarImage.sprite = _progressionBarSprites[_correctAnswersCount];
+
             }
 
             // Mark the question as answered
@@ -269,12 +285,12 @@ public class UIController : MonoBehaviour
 
                 IEnumerator DelayTheNextQuestion()
                 {
-                    _correctAnswerAnimator.SetBool("Correct", true);
+                  //  _correctAnswerAnimator.SetBool("Correct", true);
                     yield return new WaitForSeconds(2f);
                     _GoodJobContinentTMP.text = _continentName;
                     _GoodJobRankTMP.text = " + " + pointsAwarded.ToString();
                     _goodJobPopUp.SetActive(true);
-                    _correctAnswerAnimator.SetBool("Correct", false);
+                //    _correctAnswerAnimator.SetBool("Correct", false);
                     yield return new WaitForSeconds(2.5f);
                     _goodJobPopUp.SetActive(false);
                     DisplayCurrentQuestion();
