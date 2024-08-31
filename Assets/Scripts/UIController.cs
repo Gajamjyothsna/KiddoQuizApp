@@ -202,11 +202,14 @@ public class UIController : MonoBehaviour
             // Reset attempts for the new question
             currentAttempt = 0;
 
-            _progressionBarImage.sprite = _progressionBarSprites[currentAttempt];
+            // Set the progression bar sprite based on the current question index
+            if (_currentQuestionIndex < _progressionBarSprites.Length)
+            {
+                _progressionBarImage.sprite = _progressionBarSprites[_currentQuestionIndex];
+            }
 
             ResetStars();
             ResetOptionsColors();
-           // ResetPostion();
 
             for (int i = 0; i < _options.Length; i++)
             {
@@ -231,13 +234,12 @@ public class UIController : MonoBehaviour
         }
     }
 
+
     private void OnOptionSelected(int selectedOptionIndex)
     {
         var currentQuestion = _currentCategoryQuestions[_currentQuestionIndex];
 
         currentAttempt++; // Increment the attempt count
-
-
 
         if (currentQuestion.options[selectedOptionIndex] == currentQuestion.answer)
         {
@@ -261,16 +263,19 @@ public class UIController : MonoBehaviour
             // Increment correct answer count
             _correctAnswersCount++;
 
-            _progressionBarImage.sprite = _progressionBarSprites[_correctAnswersCount];
+            //// Set the progression bar sprite based on the correct answer count
+            //if (_correctAnswersCount < _progressionBarSprites.Length)
+            //{
+            //    _progressionBarImage.sprite = _progressionBarSprites[_correctAnswersCount];
+            //}
 
             // Check if 10 correct answers have been given
-            if (_correctAnswersCount > 10)
+            if (_correctAnswersCount >= 10)
             {
                 ShowCongratulationsPopup();
                 _correctAnswersCount = 0; // Reset the count if you want to allow showing the popup again after another 10 correct answers
 
                 _progressionBarImage.sprite = _progressionBarSprites[_correctAnswersCount];
-
             }
 
             // Mark the question as answered
@@ -285,12 +290,10 @@ public class UIController : MonoBehaviour
 
                 IEnumerator DelayTheNextQuestion()
                 {
-                  //  _correctAnswerAnimator.SetBool("Correct", true);
                     yield return new WaitForSeconds(2f);
                     _GoodJobContinentTMP.text = _continentName;
                     _GoodJobRankTMP.text = " + " + pointsAwarded.ToString();
                     _goodJobPopUp.SetActive(true);
-                //    _correctAnswerAnimator.SetBool("Correct", false);
                     yield return new WaitForSeconds(2.5f);
                     _goodJobPopUp.SetActive(false);
                     DisplayCurrentQuestion();
@@ -313,10 +316,9 @@ public class UIController : MonoBehaviour
             _options[selectedOptionIndex].GetComponent<Image>().color = WrongAnswerColor;
             _options[selectedOptionIndex].GetComponent<Image>().color = new Color(WrongAnswerColor.r, WrongAnswerColor.g, WrongAnswerColor.b, 1);
             _wrongAnswerPopUp.SetActive(true);
-          
-            // Optionally, provide feedback for the wrong answer
         }
     }
+
 
     private void ShowCongratulationsPopup()
     {
