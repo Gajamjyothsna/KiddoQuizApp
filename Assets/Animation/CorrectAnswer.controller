@@ -67,20 +67,20 @@ AnimatorController:
   m_Name: CorrectAnswer
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: Correct
+  - m_Name: goodJob
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
   - m_Name: newQuestion
-    m_Type: 4
+    m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: goodJob
-    m_Type: 4
+  - m_Name: correct
+    m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
@@ -211,7 +211,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Correct
+    m_ConditionEvent: correct
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 6965497590892668895}

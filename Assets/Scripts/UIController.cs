@@ -196,7 +196,7 @@ public class UIController : MonoBehaviour
 
     private void DisplayCurrentQuestion()
     {
-        _correctAnswerAnimator.SetBool("newQuestion", true);
+        _correctAnswerAnimator.SetTrigger("newQuestion");
 
         if (_currentQuestionIndex < _currentCategoryQuestions.Count)
         {
@@ -260,7 +260,7 @@ public class UIController : MonoBehaviour
             // Calculate points based on the number of attempts
             int pointsAwarded = Mathf.Max(4 - (currentAttempt - 1), 1); // Ensure at least 1 point is awarded
 
-            _correctAnswerAnimator.SetBool("Correct", true);
+            _correctAnswerAnimator.SetTrigger("correct");
 
             userPoints += pointsAwarded;
             _pointsTMP.text = userPoints.ToString();
@@ -298,7 +298,7 @@ public class UIController : MonoBehaviour
 
                 IEnumerator DelayTheNextQuestion()
                 {
-                    yield return new WaitForSeconds(1f);
+                    yield return new WaitForSeconds(5f);
                     _GoodJobContinentTMP.text = _continentName;
                     _GoodJobRankTMP.text = "YOU HAVE WON " + " + " + pointsAwarded.ToString() + " " + "STARS";
                     if(pointsAwarded < 4)
@@ -311,10 +311,9 @@ public class UIController : MonoBehaviour
                         }
                     }
                     _correctAnswerAnimator.SetBool("goodJob", true);
-
                     _goodJobPopUp.SetActive(true);
                     _questionAndAnswerPanel.SetActive(false);
-                    yield return new WaitForSeconds(2.5f);
+                    yield return new WaitForSeconds(5f);
                     _goodJobPopUp.SetActive(false);
                     _questionAndAnswerPanel.SetActive(true);
                     _correctAnswerAnimator.SetBool("goodJob", false);
