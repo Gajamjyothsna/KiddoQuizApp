@@ -196,6 +196,8 @@ public class UIController : MonoBehaviour
 
     private void DisplayCurrentQuestion()
     {
+        _correctAnswerAnimator.SetBool("newQuestion", true);
+
         if (_currentQuestionIndex < _currentCategoryQuestions.Count)
         {
             var question = _currentCategoryQuestions[_currentQuestionIndex];
@@ -297,15 +299,21 @@ public class UIController : MonoBehaviour
                     yield return new WaitForSeconds(2f);
                     _GoodJobContinentTMP.text = _continentName;
                     _GoodJobRankTMP.text = "YOU HAVE WON " + " + " + pointsAwarded.ToString() + " " + "STARS";
-                    if (currentAttempt <= starImages.Length)
+                    if(pointsAwarded < 4)
                     {
-                        starImages[currentAttempt - 1].color = starFadedColor; // Change the color of the star to white
+                        int starCount = _goodJobStarImages.Length - pointsAwarded;
+                        Debug.LogError("StarCount" + starCount);
+                        for(int i = 0; i < starCount; i++)
+                        {
+                            _goodJobStarImages[i].color = starFadedColor;
+                        }
                     }
                     _goodJobPopUp.SetActive(true);
                     _questionAndAnswerPanel.SetActive(false);
                     yield return new WaitForSeconds(2.5f);
                     _goodJobPopUp.SetActive(false);
                     _questionAndAnswerPanel.SetActive(true);
+                    _correctAnswerAnimator.SetBool("newQuestion", false);
                     DisplayCurrentQuestion();
                 }
             }
@@ -323,9 +331,10 @@ public class UIController : MonoBehaviour
             {
                 starImages[currentAttempt - 1].color = starFadedColor; // Change the color of the star to white
             }
+
             _options[selectedOptionIndex].GetComponent<Image>().color = WrongAnswerColor;
             _options[selectedOptionIndex].GetComponent<Image>().color = new Color(WrongAnswerColor.r, WrongAnswerColor.g, WrongAnswerColor.b, 1);
-            _wrongAnswerPopUp.SetActive(true);
+           // _wrongAnswerPopUp.SetActive(true);
         }
     }
 
