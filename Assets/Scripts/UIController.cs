@@ -260,6 +260,8 @@ public class UIController : MonoBehaviour
             // Calculate points based on the number of attempts
             int pointsAwarded = Mathf.Max(4 - (currentAttempt - 1), 1); // Ensure at least 1 point is awarded
 
+            _correctAnswerAnimator.SetBool("Correct", true);
+
             userPoints += pointsAwarded;
             _pointsTMP.text = userPoints.ToString();
 
@@ -296,7 +298,7 @@ public class UIController : MonoBehaviour
 
                 IEnumerator DelayTheNextQuestion()
                 {
-                    yield return new WaitForSeconds(2f);
+                    yield return new WaitForSeconds(1f);
                     _GoodJobContinentTMP.text = _continentName;
                     _GoodJobRankTMP.text = "YOU HAVE WON " + " + " + pointsAwarded.ToString() + " " + "STARS";
                     if(pointsAwarded < 4)
@@ -308,12 +310,14 @@ public class UIController : MonoBehaviour
                             _goodJobStarImages[i].color = starFadedColor;
                         }
                     }
+                    _correctAnswerAnimator.SetBool("goodJob", true);
+
                     _goodJobPopUp.SetActive(true);
                     _questionAndAnswerPanel.SetActive(false);
                     yield return new WaitForSeconds(2.5f);
                     _goodJobPopUp.SetActive(false);
                     _questionAndAnswerPanel.SetActive(true);
-                    _correctAnswerAnimator.SetBool("newQuestion", false);
+                    _correctAnswerAnimator.SetBool("goodJob", false);
                     DisplayCurrentQuestion();
                 }
             }
@@ -334,6 +338,7 @@ public class UIController : MonoBehaviour
 
             _options[selectedOptionIndex].GetComponent<Image>().color = WrongAnswerColor;
             _options[selectedOptionIndex].GetComponent<Image>().color = new Color(WrongAnswerColor.r, WrongAnswerColor.g, WrongAnswerColor.b, 1);
+            _options[selectedOptionIndex].interactable = false;
            // _wrongAnswerPopUp.SetActive(true);
         }
     }
@@ -378,6 +383,7 @@ public class UIController : MonoBehaviour
         foreach(var option in _options)
         {
             option.GetComponent<Image>().color = new Color(255, 255, 255, 1);
+            option.interactable = true;
         }
     }
 
