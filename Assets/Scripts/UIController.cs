@@ -93,7 +93,11 @@ public class UIController : MonoBehaviour
     [Header("GoodJob PopUp UI")]
     [SerializeField] private GameObject _goodJobPopUp;
     [SerializeField] private TextMeshProUGUI _GoodJobContinentTMP;
-    [SerializeField] private TextMeshProUGUI _GoodJobRankTMP;
+    [SerializeField] private Text _GoodJobRankTMP;
+    [SerializeField] private Image[] _goodJobStarImages;
+
+    [Header("QuestionAndAnswerPanel")]
+    [SerializeField] private GameObject _questionAndAnswerPanel;
 
     [Header("Answer UI")]
     [SerializeField] private Image _answerImage;
@@ -292,10 +296,16 @@ public class UIController : MonoBehaviour
                 {
                     yield return new WaitForSeconds(2f);
                     _GoodJobContinentTMP.text = _continentName;
-                    _GoodJobRankTMP.text = " + " + pointsAwarded.ToString();
+                    _GoodJobRankTMP.text = "YOU HAVE WON " + " + " + pointsAwarded.ToString() + " " + "STARS";
+                    if (currentAttempt <= starImages.Length)
+                    {
+                        starImages[currentAttempt - 1].color = starFadedColor; // Change the color of the star to white
+                    }
                     _goodJobPopUp.SetActive(true);
+                    _questionAndAnswerPanel.SetActive(false);
                     yield return new WaitForSeconds(2.5f);
                     _goodJobPopUp.SetActive(false);
+                    _questionAndAnswerPanel.SetActive(true);
                     DisplayCurrentQuestion();
                 }
             }
@@ -346,6 +356,11 @@ public class UIController : MonoBehaviour
         foreach (var star in starImages)
         {
             star.color = Color.white; // Reset all stars to yellow
+        }
+
+        foreach(var starImage in _goodJobStarImages)
+        {
+            starImage.color = Color.white;
         }
     }
 
