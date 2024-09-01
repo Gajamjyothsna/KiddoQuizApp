@@ -14,315 +14,817 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questions:
   - category: TheLand
-    question: Which is the driest place on the North American continent?
+    question: What is the coldest continent on Earth?
     options:
-    - Death Valley
-    - Sonoran Desert
-    - Mojave Desert
-    - Great Basin Desert
-    answer: Death Valley
+    - Africa
+    - Antarctica
+    - Asia
+    - Europe
+    answer: Antarctica
     isAnswered: 0
   - category: TheLand
-    question: What is the name of the longest mountain range of North America?
+    question: What covers most of TheLand in Antarctica?
     options:
-    - Andes Mountains
-    - Appalachian Mountains
-    - Rocky Mountains
-    - Canadian Shield
-    answer: Rocky Mountains
+    - Sand
+    - Grass
+    - Ice
+    - Rocks
+    answer: Ice
     isAnswered: 0
   - category: TheLand
-    question: Which ocean borders North America in the east?
+    question: What is the name of the ocean that surrounds Antarctica?
     options:
     - Atlantic Ocean
-    - Gulf of Mexico
     - Pacific Ocean
-    - Antarctic Ocean
-    answer: Atlantic Ocean
+    - Southern Ocean
+    - Indian Ocean
+    answer: Southern Ocean
     isAnswered: 0
   - category: TheLand
-    question: What is the highest point in North America?
+    question: Which type of animal is most commonly found in Antarctica?
     options:
-    - Mount Hayes
-    - Mount Logan
-    - Mount Helen
-    - Mount McKinley
-    answer: Mount McKinley
+    - Lions
+    - Penguins
+    - Elephants
+    - Tigers
+    answer: Penguins
     isAnswered: 0
   - category: TheLand
-    question: Which is the largest lake in North America?
+    question: What is the largest ice shelf in Antarctica called?
     options:
-    - Lake Michigan
-    - Lake Ontario
-    - Lake Superior
-    - Great Salt Lake
-    answer: Lake Superior
+    - Ross Ice Shelf
+    - Greenland Ice Shelf
+    - Antarctic Ice Shelf
+    - Weddell Ice Shelf
+    answer: Ross Ice Shelf
     isAnswered: 0
   - category: TheLand
-    question: Which is the national animal of the USA?
+    question: Which bird cannot fly and is found in Antarctica?
     options:
-    - Moose
-    - American Bison
-    - Reindeer
+    - Penguin
+    - Eagle
+    - Ostrich
+    - Parrot
+    answer: Penguin
+    isAnswered: 0
+  - category: TheLand
+    question: What is the largest land animal that lives in Antarctica?
+    options:
     - Polar Bear
-    answer: American Bison
+    - Seal
+    - Penguin
+    - Albatross
+    answer: Seal
     isAnswered: 0
   - category: TheLand
-    question: What is the collective name for the string of islands at the southern
-      tip of Florida?
+    question: What do penguins in Antarctica eat?
     options:
-    - Caribbean Islands
-    - Aleutian Islands
-    - Florida Keys
-    - Greater Antilles
-    answer: Florida Keys
+    - Fish
+    - Leaves
+    - Nuts
+    - Berries
+    answer: Fish
     isAnswered: 0
   - category: TheLand
-    question: In which U.S. state is the Everglades National Park?
+    question: Which type of seal is known for living in Antarctica?
     options:
-    - Hawaii
-    - Florida
-    - Oregon
-    - California
-    answer: Florida
+    - Leopard Seal
+    - Elephant Seal
+    - Harp Seal
+    - Weddell Seal
+    answer: Weddell Seal
     isAnswered: 0
   - category: TheLand
-    question: True or false? Grizzly bears are fast runners.
+    question: Which is the largest penguin species in Antarctica?
     options:
-    - TRUE
-    - FALSE
-    answer: TRUE
+    - King Penguin
+    - Emperor Penguin
+    - Gentoo Penguin
+    - Adelie Penguin
+    answer: Emperor Penguin
     isAnswered: 0
   - category: TheLand
-    question: Which animal would you expect to see in the grassland biome?
+    question: What is the name of the highest mountain in Antarctica?
     options:
-    - American Bison
-    - Elk
-    - Moose
-    - Lynx
-    answer: American Bison
+    - Mount Everest
+    - Mount McKinley
+    - Mount Vinson
+    - Mount Elbrus
+    answer: Mount Vinson
     isAnswered: 0
   - category: TheLand
-    question: What is the national bird of the United States?
+    question: Which whale is commonly seen in the waters around Antarctica?
     options:
-    - Peregrine Falcon
-    - Bald Eagle
-    - Wild Turkey
-    - Great Horned Owl
-    answer: Bald Eagle
+    - Blue Whale
+    - Humpback Whale
+    - Killer Whale
+    - Gray Whale
+    answer: Humpback Whale
     isAnswered: 0
   - category: TheLand
-    question: Which of these bear species is unique to North America?
+    question: What is the name of the place in Antarctica that is the driest?
     options:
-    - Polar Bears
-    - Sun Bears
-    - Sloth Bears
-    - Grizzly Bears
-    answer: Grizzly Bears
+    - McMurdo Dry Valleys
+    - Sahara Desert
+    - Gobi Desert
+    - Atacama Desert
+    answer: McMurdo Dry Valleys
     isAnswered: 0
   - category: TheLand
-    question: The American pika is a small mammal that lives where?
+    question: Which seal is known for having spots and lives in Antarctica?
     options:
-    - Lake Superior
-    - Rocky Mountains
-    - Appalachian Mountains
-    - Great Salt Lake
-    answer: Rocky Mountains
+    - Leopard Seal
+    - Harp Seal
+    - Monk Seal
+    - Fur Seal
+    answer: Leopard Seal
     isAnswered: 0
   - category: TheLand
-    question: Which river flows through the Grand Canyon?
+    question: Which bird has the longest wingspan and can be found near Antarctica?
     options:
-    - Colorado River
-    - Columbia River
-    - Mississippi River
-    - Rio Grande
-    answer: Colorado River
+    - Albatross
+    - Penguin
+    - Eagle
+    - Seagull
+    answer: Albatross
     isAnswered: 0
   - category: TheLand
-    question: This famous waterfall located on the borders of USA and Canada is popularly
-      known as?
+    question: What is the coldest temperature ever recorded in Antarctica?
     options:
-    - Victoria Falls
-    - Niagara Falls
-    - Yosemite Falls
-    - Multnomah Falls
-    answer: Niagara Falls
+    - 0 degrees Celsius
+    - -89.2 degrees Celsius
+    - 10 degrees Celsius
+    - -30 degrees Celsius
+    answer: -89.2 degrees Celsius
     isAnswered: 0
   - category: TheLand
-    question: The geographical feature is a broad region of Precambrian rock that
-      encircles Hudson Bay. What is this feature known as?
+    question: What is the name of the research stations where scientists live in
+      Antarctica?
     options:
-    - Rocky Mountains
-    - Great Plains
-    - Canadian Shield
-    - Appalachian Mountains
-    answer: Canadian Shield
+    - Campsites
+    - Ice Stations
+    - Research Stations
+    - Mountain Huts
+    answer: Research Stations
+    isAnswered: 0
+  - category: TheLand
+    question: Which Antarctic animal is known for its playful nature and lives in
+      the ocean?
+    options:
+    - Dolphin
+    - Seal
+    - Penguin
+    - Whale
+    answer: Seal
+    isAnswered: 0
+  - category: TheLand
+    question: What is the name of the largest glacier in Antarctica?
+    options:
+    - Lambert Glacier
+    - Columbia Glacier
+    - Perito Moreno Glacier
+    - Franz Josef Glacier
+    answer: Lambert Glacier
+    isAnswered: 0
+  - category: TheLand
+    question: Which type of whale is known for its black and white coloring and lives
+      near Antarctica?
+    options:
+    - Humpback Whale
+    - Blue Whale
+    - Orca (Killer Whale)
+    - Sperm Whale
+    answer: Orca (Killer Whale)
+    isAnswered: 0
+  - category: TheLand
+    question: Which type of fish is adapted to live in the freezing waters of Antarctica?
+    options:
+    - Cod
+    - Icefish
+    - Salmon
+    - Trout
+    answer: Icefish
+    isAnswered: 0
+  - category: TheLand
+    question: What is the main reason scientists go to Antarctica?
+    options:
+    - To study animals
+    - To go swimming
+    - To do research
+    - To climb mountains
+    answer: To do research
+    isAnswered: 0
+  - category: TheLand
+    question: Which part of Antarctica is known for its active volcano?
+    options:
+    - Ross Island
+    - Greenland
+    - South Pole
+    - Weddell Sea
+    answer: Ross Island
+    isAnswered: 0
+  - category: TheLand
+    question: Which animal in Antarctica is known for its large size and lives in
+      the ocean?
+    options:
+    - Blue Whale
+    - Polar Bear
+    - Elephant Seal
+    - Penguin
+    answer: Elephant Seal
+    isAnswered: 0
+  - category: TheLand
+    question: Which Antarctic animal uses its tusks to break through ice?
+    options:
+    - Walrus
+    - Seal
+    - Penguin
+    - Albatross
+    answer: Walrus
+    isAnswered: 0
+  - category: TheLand
+    question: What do baby penguins eat when they are young?
+    options:
+    - Fish
+    - Insects
+    - Leaves
+    - Nuts
+    answer: Fish
+    isAnswered: 0
+  - category: TheLand
+    question: Which large ice-covered area is found in Antarctica and is known as
+      a plateau?
+    options:
+    - Antarctic Plateau
+    - Greenland Plateau
+    - Sahara Plateau
+    - Arctic Plateau
+    answer: Antarctic Plateau
+    isAnswered: 0
+  - category: TheLand
+    question: Which bird in Antarctica is known for its black and white feathers
+      and waddling walk?
+    options:
+    - Albatross
+    - Penguin
+    - Seagull
+    - Owl
+    answer: Penguin
+    isAnswered: 0
+  - category: TheLand
+    question: Which seal in Antarctica is known for its loud roar?
+    options:
+    - Leopard Seal
+    - Weddell Seal
+    - Elephant Seal
+    - Harp Seal
+    answer: Elephant Seal
+    isAnswered: 0
+  - category: TheLand
+    question: What is the name of the region around the South Pole, where the sun
+      does not set for months during the summer?
+    options:
+    - Arctic Circle
+    - Antarctic Circle
+    - Equator
+    - Tropic of Capricorn
+    answer: Antarctic Circle
     isAnswered: 0
   - category: ThePeople
-    question: On which day do U.S. Americans celebrate Independence Day?
+    question: Do any people live permanently in Antarctica?
     options:
-    - 4th of July
-    - 15th of August
-    - 20th of February
-    - 25th of December
-    answer: 4th of July
+    - Yes
+    - No
+    answer: No
     isAnswered: 0
   - category: ThePeople
-    question: How many stars appear on the flag of the United States?
+    question: Who are the main people that go to Antarctica?
     options:
-    - 52
-    - 48
-    - 50
-    - 46
-    answer: 50
+    - Farmers
+    - Scientists
+    - Teachers
+    - Builders
+    answer: Scientists
     isAnswered: 0
   - category: ThePeople
-    question: The ruins of the ancient Mayan city of Palenque are found in which
-      country?
+    question: What do scientists study in Antarctica?
     options:
-    - Mexico
-    - Belize
-    - Guatemala
-    - Panama
-    answer: Mexico
+    - Animals and ice
+    - Shopping malls
+    - Big cities
+    - Forests
+    answer: Animals and ice
     isAnswered: 0
   - category: ThePeople
-    question: The best-preserved mummies in North America can be viewed in which
-      city?
+    question: What do scientists wear to keep warm in Antarctica?
     options:
-    - Ottawa, Canada
-    - Nuuk, Greenland
-    - New York City, United States
-    - Vancouver, Canada
-    answer: Nuuk, Greenland
+    - Shorts
+    - T-shirts
+    - Heavy coats and boots
+    - Sandals
+    answer: Heavy coats and boots
     isAnswered: 0
   - category: ThePeople
-    question: Although a part of North America, Greenland is a territory of which
-      country?
+    question: What is the name of the biggest research station in Antarctica?
     options:
-    - Iceland
-    - United States of America
-    - Denmark
-    - United Kingdom
-    answer: Denmark
+    - McMurdo Station
+    - Ice Station
+    - Polar Station
+    - Snow Station
+    answer: McMurdo Station
     isAnswered: 0
   - category: ThePeople
-    question: In which city would you find the Statue of Liberty?
+    question: How do people travel across the ice in Antarctica?
     options:
-    - Philadelphia
-    - New York City
-    - Washington D.C.
-    - San Francisco
-    answer: New York City
+    - Cars
+    - Airplanes
+    - Icebreakers and snowmobiles
+    - Bicycles
+    answer: Icebreakers and snowmobiles
     isAnswered: 0
   - category: ThePeople
-    question: Which is the largest city in North America?
+    question: Why do scientists study penguins in Antarctica?
     options:
-    - New York City
-    - Toronto
-    - Mexico City
-    - San Francisco
-    answer: Mexico City
+    - To learn about their behavior
+    - To eat them
+    - To sell them as pets
+    - To make movies
+    answer: To learn about their behavior
     isAnswered: 0
   - category: ThePeople
-    question: How many countries are there in Central America?
+    question: What do scientists do when they see a crack in the ice?
     options:
-    - 6
-    - 7
-    - 8
-    - 9
-    answer: 7
+    - Jump over it
+    - Run away
+    - Measure it and study it
+    - Ignore it
+    answer: Measure it and study it
     isAnswered: 0
   - category: ThePeople
-    question: Which language is the most commonly spoken in Central America?
+    question: How do scientists get to Antarctica?
     options:
-    - Creole
-    - Portuguese
-    - Spanish
-    - Miskito
-    answer: Spanish
+    - Walk
+    - Drive
+    - Fly or sail by ship
+    - Take a train
+    answer: Fly or sail by ship
     isAnswered: 0
   - category: ThePeople
-    question: 'The waterway in Panama that connects the Atlantic Ocean with the Pacific
-      Ocean is known as:'
+    question: What do scientists use to study animals in the ocean around Antarctica?
     options:
-    - Champlain Canal
-    - Florida Canal
-    - Panama Canal
-    - Orleans Canal
-    answer: Panama Canal
+    - Submarines
+    - Bicycles
+    - Trains
+    - Cars
+    answer: Submarines
     isAnswered: 0
   - category: ThePeople
-    question: Which Native American people lived in the Arctic region?
+    question: What is the main challenge for people living in Antarctica?
     options:
-    - Aztec
-    - Inca
-    - Maya
-    - Inuit
-    answer: Inuit
+    - Getting enough food
+    - Staying warm
+    - Finding a house
+    - Making friends
+    answer: Staying warm
     isAnswered: 0
   - category: ThePeople
-    question: The ancient culture of the Maya developed in what is now the present-day
-      region of which three countries?
+    question: What do people do in research stations in Antarctica?
     options:
-    - USA, Canada, Greenland
-    - Mexico, Belize, Guatemala
-    - Mexico, Panama, Nicaragua
-    - USA, Mexico, Guatemala
-    answer: Mexico, Belize, Guatemala
+    - Study the environment
+    - Grow crops
+    - Build houses
+    - Go shopping
+    answer: Study the environment
     isAnswered: 0
   - category: ThePeople
-    question: Which Native American civilization built the city of Machu Picchu?
+    question: Why don't trees grow in Antarctica?
     options:
-    - Aztec
-    - Inca
-    - Maya
-    - Olmec
-    answer: Inca
+    - "It\u2019s too cold"
+    - "There\u2019s too much water"
+    - There are too many animals
+    - The soil is not good
+    answer: "It\u2019s too cold"
     isAnswered: 0
   - category: ThePeople
-    question: "Which Native American civilization built the ancient city of Tenochtitl\xE1n?"
+    question: What is the name of the area where scientists sleep in Antarctica?
     options:
-    - Inca
-    - Olmec
-    - Aztec
-    - Maya
-    answer: Aztec
+    - Research Station
+    - Campsite
+    - Igloo
+    - Hotel
+    answer: Research Station
     isAnswered: 0
   - category: ThePeople
-    question: This Native American civilization was known for creating a calendar
-      and pyramids. Who were they?
+    question: Why do scientists study the ice in Antarctica?
     options:
-    - Inca
-    - Olmec
-    - Aztec
-    - Maya
-    answer: Maya
+    - To understand climate change
+    - To find treasure
+    - To build snowmen
+    - To make ice cream
+    answer: To understand climate change
     isAnswered: 0
   - category: ThePeople
-    question: Which U.S. state was originally called the Sandwich Islands?
+    question: What do scientists use to communicate with others while in Antarctica?
     options:
-    - Hawaii
-    - Alaska
-    - California
-    - Washington
-    answer: Hawaii
+    - Computers and radios
+    - Pigeons
+    - Yelling
+    - Smoke signals
+    answer: Computers and radios
     isAnswered: 0
   - category: ThePeople
-    question: Which country is known as TheLand of the Rising Sun?
+    question: Why is it important for scientists to study the animals in Antarctica?
     options:
-    - China
-    - India
-    - Japan
-    - South Korea
-    answer: Japan
+    - To protect them
+    - To sell them
+    - To make toys
+    - To build houses
+    answer: To protect them
     isAnswered: 0
   - category: ThePeople
-    question: Which country is famous for inventing pasta and pizza?
+    question: What do scientists need to do before going outside in Antarctica?
     options:
-    - France
-    - Italy
-    - Greece
-    - Mexico
-    answer: Italy
+    - Put on warm clothes
+    - Wear sandals
+    - Take a nap
+    - Drink a soda
+    answer: Put on warm clothes
+    isAnswered: 0
+  - category: ThePeople
+    question: What is the name of the place where planes land in Antarctica?
+    options:
+    - Ice Runway
+    - Grass Field
+    - Desert Track
+    - Rocky Path
+    answer: Ice Runway
+    isAnswered: 0
+  - category: ThePeople
+    question: Why do scientists work together in Antarctica?
+    options:
+    - To stay safe and learn more
+    - To play games
+    - To build tall buildings
+    - To go swimming
+    answer: To stay safe and learn more
+    isAnswered: 0
+  - category: ThePeople
+    question: What do scientists eat in Antarctica?
+    options:
+    - Fresh vegetables
+    - Canned and frozen food
+    - Ice cream
+    - Tropical fruits
+    answer: Canned and frozen food
+    isAnswered: 0
+  - category: ThePeople
+    question: What is the most common job for people who go to Antarctica?
+    options:
+    - Scientist
+    - Teacher
+    - Farmer
+    - Doctor
+    answer: Scientist
+    isAnswered: 0
+  - category: ThePeople
+    question: What is the name of the flag used in Antarctica?
+    options:
+    - Antarctic Treaty Flag
+    - Country Flag
+    - Ice Flag
+    - Penguin Flag
+    answer: Antarctic Treaty Flag
+    isAnswered: 0
+  - category: ThePeople
+    question: Why do scientists study the weather in Antarctica?
+    options:
+    - To predict storms
+    - To go on vacation
+    - To find gold
+    - To watch TV
+    answer: To predict storms
+    isAnswered: 0
+  - category: ThePeople
+    question: What do scientists do when they find a new animal in Antarctica?
+    options:
+    - Study it and name it
+    - Ignore it
+    - Eat it
+    - Play with it
+    answer: Study it and name it
+    isAnswered: 0
+  - category: ThePeople
+    question: What is the main reason scientists study the icebergs in Antarctica?
+    options:
+    - To understand how they form
+    - To ride on them
+    - To build houses on them
+    - To make ice cubes
+    answer: To understand how they form
+    isAnswered: 0
+  - category: ThePeople
+    question: How do scientists stay warm in Antarctica?
+    options:
+    - They wear heavy coats and use heaters
+    - They drink cold water
+    - They swim in the ocean
+    - They sit in the sun
+    answer: They wear heavy coats and use heaters
+    isAnswered: 0
+  - category: ThePeople
+    question: Why is it important to protect the animals in Antarctica?
+    options:
+    - To keep them safe and healthy
+    - To sell them
+    - To have them as pets
+    - To build houses
+    answer: To keep them safe and healthy
+    isAnswered: 0
+  - category: ThePeople
+    question: What do scientists learn about from studying Antarctica?
+    options:
+    - How the Earth is changing
+    - How to build sandcastles
+    - How to grow flowers
+    - How to cook food
+    answer: How the Earth is changing
+    isAnswered: 0
+  - category: ThePeople
+    question: How do scientists in Antarctica get their food?
+    options:
+    - It is shipped to them
+    - They grow it
+    - They catch fish
+    - They buy it from stores
+    answer: It is shipped to them
+    isAnswered: 0
+  - category: TheEconomy
+    question: Does Antarctica have any stores or shopping malls?
+    options:
+    - Yes
+    - No
+    answer: No
+    isAnswered: 0
+  - category: TheEconomy
+    question: What is the main activity that people do in Antarctica?
+    options:
+    - Shopping
+    - Research and science
+    - Farming
+    - Fishing
+    answer: Research and science
+    isAnswered: 0
+  - category: TheEconomy
+    question: Why is there no farming in Antarctica?
+    options:
+    - "It\u2019s too cold"
+    - The soil is too good
+    - There are too many animals
+    - "There\u2019s not enough sunlight"
+    answer: "It\u2019s too cold"
+    isAnswered: 0
+  - category: TheEconomy
+    question: Where do scientists in Antarctica get their supplies from?
+    options:
+    - Local markets
+    - Shipments from other countries
+    - They grow it themselves
+    - From trees
+    answer: Shipments from other countries
+    isAnswered: 0
+  - category: TheEconomy
+    question: What do scientists in Antarctica study to help understand climate change?
+    options:
+    - Ice cores
+    - Rocks
+    - Sand
+    - Trees
+    answer: Ice cores
+    isAnswered: 0
+  - category: TheEconomy
+    question: What is the main reason people visit Antarctica?
+    options:
+    - Tourism
+    - Science and research
+    - To build houses
+    - To find treasure
+    answer: Science and research
+    isAnswered: 0
+  - category: TheEconomy
+    question: What do scientists need to bring with them to Antarctica?
+    options:
+    - Warm clothes and food
+    - Sandals and sunscreen
+    - Books and toys
+    - Seeds and plants
+    answer: Warm clothes and food
+    isAnswered: 0
+  - category: TheEconomy
+    question: "Why don\u2019t people build houses in Antarctica?"
+    options:
+    - "It\u2019s too cold"
+    - The land is too expensive
+    - There are too many animals
+    - "It\u2019s too crowded"
+    answer: "It\u2019s too cold"
+    isAnswered: 0
+  - category: TheEconomy
+    question: What is the main reason Antarctica is important to the world?
+    options:
+    - "It helps scientists study the Earth\u2019s climate"
+    - It has lots of stores
+    - "It\u2019s a great place to live"
+    - It has many farms
+    answer: "It helps scientists study the Earth\u2019s climate"
+    isAnswered: 0
+  - category: TheEconomy
+    question: How do scientists power their research stations in Antarctica?
+    options:
+    - Solar panels and generators
+    - Windmills
+    - Water power
+    - Cooking stoves
+    answer: Solar panels and generators
+    isAnswered: 0
+  - category: TheEconomy
+    question: What do scientists in Antarctica use to melt ice for drinking water?
+    options:
+    - Heaters
+    - Hairdryers
+    - Sunlight
+    - Hot water bottles
+    answer: Heaters
+    isAnswered: 0
+  - category: TheEconomy
+    question: Why is tourism limited in Antarctica?
+    options:
+    - To protect the environment
+    - There are too many stores
+    - "It\u2019s too warm"
+    - There are no roads
+    answer: To protect the environment
+    isAnswered: 0
+  - category: TheEconomy
+    question: How do scientists in Antarctica get electricity?
+    options:
+    - Solar power and generators
+    - Windmills
+    - Water power
+    - Batteries
+    answer: Solar power and generators
+    isAnswered: 0
+  - category: TheEconomy
+    question: What do scientists in Antarctica do to stay safe?
+    options:
+    - They work together and use special equipment
+    - They stay indoors
+    - They eat lots of food
+    - They play games
+    answer: They work together and use special equipment
+    isAnswered: 0
+  - category: TheEconomy
+    question: Why is it hard to travel in Antarctica?
+    options:
+    - The ice and snow make it difficult
+    - There are too many trees
+    - The roads are busy
+    - "There\u2019s too much sand"
+    answer: The ice and snow make it difficult
+    isAnswered: 0
+  - category: TheEconomy
+    question: What is one of the main things scientists learn from studying Antarctica?
+    options:
+    - How climate change is affecting the planet
+    - How to build houses
+    - How to grow plants
+    - How to bake bread
+    answer: How climate change is affecting the planet
+    isAnswered: 0
+  - category: TheEconomy
+    question: How do scientists communicate with others while in Antarctica?
+    options:
+    - Radios and satellite phones
+    - Yelling
+    - Pigeons
+    - Drums
+    answer: Radios and satellite phones
+    isAnswered: 0
+  - category: TheEconomy
+    question: "What do scientists in Antarctica study to learn about the Earth\u2019s
+      past?"
+    options:
+    - Ice cores
+    - Sand
+    - Rocks
+    - Trees
+    answer: Ice cores
+    isAnswered: 0
+  - category: TheEconomy
+    question: "Why don\u2019t crops grow in Antarctica?"
+    options:
+    - "It\u2019s too cold and there\u2019s no soil"
+    - "There\u2019s too much water"
+    - There are too many animals
+    - "There\u2019s too much sunlight"
+    answer: "It\u2019s too cold and there\u2019s no soil"
+    isAnswered: 0
+  - category: TheEconomy
+    question: What is the main resource that scientists study in Antarctica?
+    options:
+    - Ice
+    - Wood
+    - Gold
+    - Sand
+    answer: Ice
+    isAnswered: 0
+  - category: TheEconomy
+    question: Why is Antarctica important for studying wildlife?
+    options:
+    - It has unique animals
+    - It has many forests
+    - It has lots of farms
+    - It has many stores
+    answer: It has unique animals
+    isAnswered: 0
+  - category: TheEconomy
+    question: How do scientists travel to different places in Antarctica?
+    options:
+    - Snowmobiles and icebreakers
+    - Bicycles
+    - Trains
+    - Boats
+    answer: Snowmobiles and icebreakers
+    isAnswered: 0
+  - category: TheEconomy
+    question: What do scientists need to protect in Antarctica?
+    options:
+    - The environment and animals
+    - The shopping malls
+    - The houses
+    - The beaches
+    answer: The environment and animals
+    isAnswered: 0
+  - category: TheEconomy
+    question: How do scientists stay connected to the rest of the world while in
+      Antarctica?
+    options:
+    - Satellites and radios
+    - Pigeons
+    - Smoke signals
+    - Drums
+    answer: Satellites and radios
+    isAnswered: 0
+  - category: TheEconomy
+    question: What is one of the most important things scientists do in Antarctica?
+    options:
+    - Study climate change
+    - Build stores
+    - Grow crops
+    - Cook food
+    answer: Study climate change
+    isAnswered: 0
+  - category: TheEconomy
+    question: Why do scientists study the icebergs in Antarctica?
+    options:
+    - To understand how they form and move
+    - To build houses
+    - To go swimming
+    - To make ice cubes
+    answer: To understand how they form and move
+    isAnswered: 0
+  - category: TheEconomy
+    question: "Why is Antarctica important for the world\u2019s climate?"
+    options:
+    - It helps scientists understand global warming
+    - It has many stores
+    - "It\u2019s a great place to live"
+    - It has many farms
+    answer: It helps scientists understand global warming
+    isAnswered: 0
+  - category: TheEconomy
+    question: How do scientists melt ice to get water in Antarctica?
+    options:
+    - Heaters and sunlight
+    - Fires
+    - Hot water bottles
+    - Hairdryers
+    answer: Heaters and sunlight
+    isAnswered: 0
+  - category: TheEconomy
+    question: Why is it important to limit the number of tourists in Antarctica?
+    options:
+    - To protect the environment and wildlife
+    - To keep the stores from getting crowded
+    - To have more space for buildings
+    - To grow more crops
+    answer: To protect the environment and wildlife
+    isAnswered: 0
+  - category: TheEconomy
+    question: What is the main focus of scientific research in Antarctica?
+    options:
+    - Studying the climate and environment
+    - Building houses
+    - Growing food
+    - Shopping
+    answer: Studying the climate and environment
     isAnswered: 0

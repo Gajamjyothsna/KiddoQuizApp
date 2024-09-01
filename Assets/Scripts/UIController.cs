@@ -169,6 +169,12 @@ public class UIController : MonoBehaviour
         SetQuizUI(category);
     }
 
+    private void BackToMainScreen()
+    {
+        _quizTopicSelectionPanel.SetActive(true);
+        _quizSelectionPanel.SetActive(false);
+    }
+
     private void DisplayQuestionsByCategory(string category)
     {
         _quizTopicSelectionPanel.SetActive(false);
@@ -270,13 +276,10 @@ public class UIController : MonoBehaviour
             _pointsTMP.text = userPoints.ToString();
 
             userScore += 1;
-            _scoreTMP.text = userScore.ToString();
+            _scoreTMP.text = userPoints.ToString();
 
             // Increment correct answer count
             _correctAnswersCount++;
-
-
-           
 
             // Mark the question as answered
             currentQuestion.isAnswered = true;

@@ -2757,8 +2757,8 @@ MonoBehaviour:
   - Europe
   - NorthAmerica
   - SouthAmerica
-  selectedJsonIndex: 5
-  _continentName: NorthAmerica
+  selectedJsonIndex: 1
+  _continentName: Antarctica
 --- !u!1 &576197384
 GameObject:
   m_ObjectHideFlags: 0
@@ -2986,7 +2986,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.54509807}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
