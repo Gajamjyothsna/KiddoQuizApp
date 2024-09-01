@@ -47,6 +47,8 @@ public class UIController : MonoBehaviour
     {
         public Category _continentCategory;
         public Sprite _headerImage;
+
+        public List<Sprite> quizImageAnswers;
     }
     #endregion
     [Header("Quiz Data Model Debugging")]
@@ -121,6 +123,7 @@ public class UIController : MonoBehaviour
     [SerializeField] private Sprite[] _progressionBarSprites;
     [SerializeField] private Image _progressionBarImage;
 
+
     private List<QuizDataManager.Question> _currentCategoryQuestions;
     private int _currentQuestionIndex = 0;
     private int _correctAnswersCount = 0; // Counter for correct answers
@@ -129,6 +132,7 @@ public class UIController : MonoBehaviour
     private int userPoints = 0;
 
     private string _continentName;
+    private string _category;
 
     public void SetQuizData(QuizDataManager.QuizData data, string continent)
     {
@@ -144,6 +148,7 @@ public class UIController : MonoBehaviour
     private void SetQuizUI(string _category)
     {
       _headerIM.sprite =  _headerImageClasses.Find(x => x.continentType.ToString() == _continentName).continentHeaderImageData.Find(x=>x._continentCategory.ToString() == _category)._headerImage;
+        this._category = _category;
     }
 
     private void SetBGData(string _continent)
@@ -249,10 +254,9 @@ public class UIController : MonoBehaviour
 
         if (currentQuestion.options[selectedOptionIndex] == currentQuestion.answer)
         {
-            string imageUrl = "https://cdn2.thecatapi.com/images/ebv.jpg";
-            StartCoroutine(LoadImageFromURL(imageUrl, _answerImage));
-            StartCoroutine(LoadImageFromURL(imageUrl, _goodJobPanelAnswerImage));
             Debug.Log("Correct answer!");
+
+            LoadImageFromData(_currentQuestionIndex);
 
             _options[selectedOptionIndex].GetComponent<Image>().color = CorrectAnswerColor;
             _options[selectedOptionIndex].GetComponent<Image>().color = new Color(CorrectAnswerColor.r, CorrectAnswerColor.g, CorrectAnswerColor.b, 1);
@@ -271,20 +275,8 @@ public class UIController : MonoBehaviour
             // Increment correct answer count
             _correctAnswersCount++;
 
-            //// Set the progression bar sprite based on the correct answer count
-            //if (_correctAnswersCount < _progressionBarSprites.Length)
-            //{
-            //    _progressionBarImage.sprite = _progressionBarSprites[_correctAnswersCount];
-            //}
 
-            // Check if 10 correct answers have been given
-            if (_correctAnswersCount >= 10)
-            {
-                ShowCongratulationsPopup();
-                _correctAnswersCount = 0; // Reset the count if you want to allow showing the popup again after another 10 correct answers
-
-                _progressionBarImage.sprite = _progressionBarSprites[_correctAnswersCount];
-            }
+           
 
             // Mark the question as answered
             currentQuestion.isAnswered = true;
@@ -298,7 +290,7 @@ public class UIController : MonoBehaviour
 
                 IEnumerator DelayTheNextQuestion()
                 {
-                    yield return new WaitForSeconds(5f);
+                    yield return new WaitForSeconds(3f);
                     _GoodJobContinentTMP.text = _continentName;
                     _GoodJobRankTMP.text = "YOU HAVE WON " + " + " + pointsAwarded.ToString() + " " + "STARS";
                     if(pointsAwarded < 4)
@@ -314,10 +306,19 @@ public class UIController : MonoBehaviour
                     _goodJobPopUp.SetActive(true);
                     _questionAndAnswerPanel.SetActive(false);
                     yield return new WaitForSeconds(5f);
+                    _correctAnswerAnimator.SetBool("goodJob", false);
                     _goodJobPopUp.SetActive(false);
                     _questionAndAnswerPanel.SetActive(true);
-                    _correctAnswerAnimator.SetBool("goodJob", false);
-                    DisplayCurrentQuestion();
+
+                    // Check if 10 correct answers have been given
+                    if (_correctAnswersCount == 10)
+                    {
+                        ShowCongratulationsPopup();
+                        _correctAnswersCount = 0; // Reset the count if you want to allow showing the popup again after another 10 correct answers
+
+                        _progressionBarImage.sprite = _progressionBarSprites[_correctAnswersCount];
+                    }
+                    else if(_correctAnswersCount < 10)  DisplayCurrentQuestion();
                 }
             }
             else
@@ -392,20 +393,10 @@ public class UIController : MonoBehaviour
        
     }
 
-    IEnumerator LoadImageFromURL(string url, Image uiImage)
-    {
-        UnityWebRequest request = UnityWebRequestTexture.GetTexture(url);
-        yield return request.SendWebRequest();
 
-        if (request.result != UnityWebRequest.Result.Success)
-        {
-            Debug.LogError("Failed to load image: " + request.error);
-        }
-        else
-        {
-            Texture2D texture = ((DownloadHandlerTexture)request.downloadHandler).texture;
-            uiImage.sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
-        }
+    private void LoadImageFromData(int index)
+    {
+      _answerImage.sprite =  _headerImageClasses.Find(x => x.continentType.ToString() == _continentName).continentHeaderImageData.Find(x=>x._continentCategory.ToString() == _category).quizImageAnswers[index];
     }
 
 }
