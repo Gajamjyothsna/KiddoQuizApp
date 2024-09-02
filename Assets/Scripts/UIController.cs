@@ -169,7 +169,7 @@ public class UIController : MonoBehaviour
         SetQuizUI(category);
     }
 
-    private void BackToMainScreen()
+    public void BackToMainScreen()
     {
         _quizTopicSelectionPanel.SetActive(true);
         _quizSelectionPanel.SetActive(false);
@@ -264,8 +264,15 @@ public class UIController : MonoBehaviour
 
             LoadImageFromData(_currentQuestionIndex);
 
+            ResetOptionAnimation();
+
             _options[selectedOptionIndex].GetComponent<Image>().color = CorrectAnswerColor;
             _options[selectedOptionIndex].GetComponent<Image>().color = new Color(CorrectAnswerColor.r, CorrectAnswerColor.g, CorrectAnswerColor.b, 1);
+
+            foreach(var option in _options)
+            {
+                option.interactable = false;
+            }
 
             // Calculate points based on the number of attempts
             int pointsAwarded = Mathf.Max(4 - (currentAttempt - 1), 1); // Ensure at least 1 point is awarded
@@ -313,21 +320,14 @@ public class UIController : MonoBehaviour
                     _goodJobPopUp.SetActive(false);
                     _questionAndAnswerPanel.SetActive(true);
 
-                    // Check if 10 correct answers have been given
-                    if (_correctAnswersCount == 10)
-                    {
-                        ShowCongratulationsPopup();
-                        _correctAnswersCount = 0; // Reset the count if you want to allow showing the popup again after another 10 correct answers
-
-                        _progressionBarImage.sprite = _progressionBarSprites[_correctAnswersCount];
-                    }
-                    else if(_correctAnswersCount < 10)  DisplayCurrentQuestion();
+                    DisplayCurrentQuestion();
                 }
             }
             else
             {
                 Debug.Log("Quiz completed!");
                 // Optionally, display a completion message or reset the quiz.
+                ShowCongratulationsPopup();
             }
         }
         else
@@ -342,7 +342,10 @@ public class UIController : MonoBehaviour
             _options[selectedOptionIndex].GetComponent<Image>().color = WrongAnswerColor;
             _options[selectedOptionIndex].GetComponent<Image>().color = new Color(WrongAnswerColor.r, WrongAnswerColor.g, WrongAnswerColor.b, 1);
             _options[selectedOptionIndex].interactable = false;
-           // _wrongAnswerPopUp.SetActive(true);
+
+            _options[selectedOptionIndex].GetComponent<Animator>().SetBool("wrongOption", true);
+
+            // _wrongAnswerPopUp.SetActive(true);
         }
     }
 
@@ -368,6 +371,14 @@ public class UIController : MonoBehaviour
         _hintTMP.text = "";
     }
 
+    private void ResetOptionAnimation()
+    {
+        foreach(var option in _options)
+        {
+            option.GetComponent<Animator>().SetBool("wrongOption", false);
+        }
+    }
+
     private void ResetStars()
     {
         foreach (var star in starImages)
@@ -379,6 +390,7 @@ public class UIController : MonoBehaviour
         {
             starImage.color = Color.white;
         }
+
     }
 
     private void ResetOptionsColors()
@@ -387,7 +399,9 @@ public class UIController : MonoBehaviour
         {
             option.GetComponent<Image>().color = new Color(255, 255, 255, 1);
             option.interactable = true;
+            option.GetComponent<Animator>().SetBool("wrongOption", false);
         }
+
     }
 
    private void ResetPostion()
