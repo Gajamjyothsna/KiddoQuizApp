@@ -51,8 +51,13 @@ public class UIController : MonoBehaviour
         public List<Sprite> quizImageAnswers;
     }
     #endregion
+
+    #region Priavte Variables
     [Header("Quiz Data Model Debugging")]
     public QuizDataManager.QuizData quizData;
+
+    [Header("QuizdataManager Reference")]
+    [SerializeField] private QuizDataManager quizDataManager;
 
     [Header("UI References")]
     [SerializeField] private GameObject _quizTopicSelectionPanel;
@@ -123,6 +128,12 @@ public class UIController : MonoBehaviour
     [SerializeField] private Sprite[] _progressionBarSprites;
     [SerializeField] private Image _progressionBarImage;
 
+    [Header("Congraulations PopUP UI components")]
+    [SerializeField] private Text continentText;
+    [SerializeField] private Text _starsCount;
+
+    [Header("Played Contest PopUp UI")]
+    [SerializeField] private GameObject _contestPlayedPopUp;
 
     private List<QuizDataManager.Question> _currentCategoryQuestions;
     private int _currentQuestionIndex = 0;
@@ -134,6 +145,9 @@ public class UIController : MonoBehaviour
     private string _continentName;
     private string _category;
 
+    #endregion
+
+    #region Init methods
     public void SetQuizData(QuizDataManager.QuizData data, string continent)
     {
         quizData = data;
@@ -149,6 +163,7 @@ public class UIController : MonoBehaviour
     {
       _headerIM.sprite =  _headerImageClasses.Find(x => x.continentType.ToString() == _continentName).continentHeaderImageData.Find(x=>x._continentCategory.ToString() == _category)._headerImage;
         this._category = _category;
+
     }
 
     private void SetBGData(string _continent)
@@ -162,23 +177,16 @@ public class UIController : MonoBehaviour
 
        _progressionBarImage.sprite = _progressionBarSprites[_correctAnswersCount];
     }
-    public void OnCategoryButtonClick(string category)
-    {
-        DisplayQuestionsByCategory(category);
 
-        SetQuizUI(category);
-    }
+    #endregion
 
-    public void BackToMainScreen()
-    {
-        _quizTopicSelectionPanel.SetActive(true);
-        _quizSelectionPanel.SetActive(false);
-    }
-
+    
     private void DisplayQuestionsByCategory(string category)
     {
         _quizTopicSelectionPanel.SetActive(false);
         _quizSelectionPanel.SetActive(true);
+        _questionPanel.SetActive(true);
+
 
         if (quizData == null || quizData.questions == null)
         {
@@ -247,11 +255,10 @@ public class UIController : MonoBehaviour
         else
         {
             Debug.Log("Quiz completed!");
-            // Optionally, display a completion message or reset the quiz.
         }
     }
 
-
+    #region ButtonActions Methods
     private void OnOptionSelected(int selectedOptionIndex)
     {
         var currentQuestion = _currentCategoryQuestions[_currentQuestionIndex];
@@ -280,10 +287,10 @@ public class UIController : MonoBehaviour
             _correctAnswerAnimator.SetTrigger("correct");
 
             userPoints += pointsAwarded;
-            _pointsTMP.text = userPoints.ToString();
+            //  _pointsTMP.text = userPoints.ToString();
 
-            userScore += 1;
             _scoreTMP.text = userPoints.ToString();
+           
 
             // Increment correct answer count
             _correctAnswersCount++;
@@ -294,7 +301,7 @@ public class UIController : MonoBehaviour
             // Move to the next question
             _currentQuestionIndex++;
 
-            if (_currentQuestionIndex < _currentCategoryQuestions.Count)
+            if (_currentQuestionIndex <= _currentCategoryQuestions.Count)
             {
                 StartCoroutine(DelayTheNextQuestion());
 
@@ -320,13 +327,16 @@ public class UIController : MonoBehaviour
                     _goodJobPopUp.SetActive(false);
                     _questionAndAnswerPanel.SetActive(true);
 
-                    DisplayCurrentQuestion();
+                    if(_currentQuestionIndex == 10)
+                    {
+                        ShowCongratulationsPopup();
+                    }
+                    else if(_currentQuestionIndex < 10) DisplayCurrentQuestion();
                 }
             }
             else
             {
                 Debug.Log("Quiz completed!");
-                // Optionally, display a completion message or reset the quiz.
                 ShowCongratulationsPopup();
             }
         }
@@ -344,17 +354,51 @@ public class UIController : MonoBehaviour
             _options[selectedOptionIndex].interactable = false;
 
             _options[selectedOptionIndex].GetComponent<Animator>().SetBool("wrongOption", true);
-
-            // _wrongAnswerPopUp.SetActive(true);
         }
     }
 
+    public void OnCategoryButtonClick(string category)
+    {
+        if(quizDataManager.quizDataScriptableObject.continentIndividualScoreDatas.Find(x=>x.continentType.ToString() == _continentName).categoryIndividualDatas.Find(x=>x.category.ToString() == category).isPlayed == false)
+        {
+            DisplayQuestionsByCategory(category);
+
+            SetQuizUI(category);
+        }
+        else
+        {
+            _contestPlayedPopUp.SetActive(true);
+            _quizTopicSelectionPanel.SetActive(false);
+        }
+        
+    }
+
+    public void CloseContestPopUP()
+    {
+        _contestPlayedPopUp.SetActive(false);
+        _quizTopicSelectionPanel.SetActive(true);
+    }
+
+    #endregion
 
     private void ShowCongratulationsPopup()
     {
+        continentText.text = _category.ToUpper() + " OF" + " " + _continentName.ToUpper();
+        _starsCount.text = userPoints.ToString();
         _congratulationsPopup.SetActive(true); // Show the popup
         _questionsPanel.SetActive(false);
-        // Optionally, you can add more logic here, such as pausing the quiz or giving rewards
+        quizDataManager.SetScoreDataInScriptableObject(_continentName, _category,userPoints);
+        
+
+        StartCoroutine(OpenTheHomePage());
+
+        IEnumerator OpenTheHomePage()
+        {
+            yield return new WaitForSeconds(2f);
+            _congratulationsPopup.SetActive(false);
+            _quizTopicSelectionPanel.SetActive(true);
+        }
+
     }
 
     public void OnClosePopup()
@@ -370,6 +414,8 @@ public class UIController : MonoBehaviour
         _wrongAnswerPopUp.SetActive(false) ;
         _hintTMP.text = "";
     }
+
+    #region Reset Methods
 
     private void ResetOptionAnimation()
     {
@@ -404,12 +450,7 @@ public class UIController : MonoBehaviour
 
     }
 
-   private void ResetPostion()
-    {
-        Debug.Log("ResetPostion");
-       
-    }
-
+    #endregion
 
     private void LoadImageFromData(int index)
     {

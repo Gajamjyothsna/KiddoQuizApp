@@ -828,3 +828,82 @@ MonoBehaviour:
     - Shopping
     answer: Studying the climate and environment
     isAnswered: 0
+  continentIndividualScoreDatas:
+  - continentType: 0
+    categoryIndividualDatas:
+    - category: 0
+      isPlayed: 0
+      _categoryScore: 0
+    - category: 1
+      isPlayed: 0
+      _categoryScore: 0
+    - category: 2
+      isPlayed: 0
+      _categoryScore: 0
+  - continentType: 1
+    categoryIndividualDatas:
+    - category: 0
+      isPlayed: 0
+      _categoryScore: 0
+    - category: 1
+      isPlayed: 0
+      _categoryScore: 0
+    - category: 2
+      isPlayed: 0
+      _categoryScore: 0
+  - continentType: 2
+    categoryIndividualDatas:
+    - category: 1
+      isPlayed: 0
+      _categoryScore: 0
+    - category: 1
+      isPlayed: 0
+      _categoryScore: 0
+    - category: 2
+      isPlayed: 0
+      _categoryScore: 0
+  - continentType: 4
+    categoryIndividualDatas:
+    - category: 0
+      isPlayed: 0
+      _categoryScore: 0
+    - category: 1
+      isPlayed: 0
+      _categoryScore: 0
+    - category: 2
+      isPlayed: 0
+      _categoryScore: 0
+  - continentType: 5
+    categoryIndividualDatas:
+    - category: 0
+      isPlayed: 0
+      _categoryScore: 0
+    - category: 1
+      isPlayed: 0
+      _categoryScore: 0
+    - category: 2
+      isPlayed: 0
+      _categoryScore: 0
+  - continentType: 6
+    categoryIndividualDatas:
+    - category: 0
+      isPlayed: 0
+      _categoryScore: 0
+    - category: 1
+      isPlayed: 0
+      _categoryScore: 0
+    - category: 2
+      isPlayed: 0
+      _categoryScore: 0
+  - continentType: 3
+    categoryIndividualDatas:
+    - category: 0
+      isPlayed: 0
+      _categoryScore: 0
+    - category: 1
+      isPlayed: 0
+      _categoryScore: 0
+    - category: 2
+      isPlayed: 0
+      _categoryScore: 0
+  TotalScore: 0

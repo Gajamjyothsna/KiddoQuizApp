@@ -21,7 +21,7 @@ public class QuizDataManager : MonoBehaviour
     }
 
     [SerializeField] private UIController _uiController;
-    [SerializeField] private QuizDataScriptableObject quizDataScriptableObject;
+    [SerializeField] public QuizDataScriptableObject quizDataScriptableObject;
     [SerializeField] private List<string> jsonFileNames; // List of JSON file names (without extension)
     [SerializeField] private int selectedJsonIndex = 0; // Index to select the specific JSON file
 
@@ -97,5 +97,14 @@ public class QuizDataManager : MonoBehaviour
         {
             Debug.LogError("QuizDataScriptableObject or UIController is not assigned.");
         }
+    }
+
+    public void SetScoreDataInScriptableObject(string _continentType, string _category, int totalScore)
+    {
+        int _ContinentInex = quizDataScriptableObject.continentIndividualScoreDatas.FindIndex(x => x.continentType.ToString() == _continentType);
+        int _CategoryIndex = quizDataScriptableObject.continentIndividualScoreDatas[_ContinentInex].categoryIndividualDatas.FindIndex(x => x.category.ToString() == _category);
+        quizDataScriptableObject.continentIndividualScoreDatas[_ContinentInex].categoryIndividualDatas[_CategoryIndex].isPlayed = true;
+        quizDataScriptableObject.continentIndividualScoreDatas[_ContinentInex].categoryIndividualDatas[_CategoryIndex]._categoryScore = totalScore;
+        quizDataScriptableObject.TotalScore+= totalScore;
     }
 }
